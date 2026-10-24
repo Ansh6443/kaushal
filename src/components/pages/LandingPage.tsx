@@ -91,28 +91,28 @@ export const LandingPage: React.FC<LandingPageProps> = ({ lang, onNavigate }) =>
         {/* Left Column: Authoritative Editorial Proposition with Warm Accents */}
         <div className="md:col-span-7 space-y-6">
           
-          {/* Institutional Editorial Kicker (Vibrant Amber & Blue Harmony) */}
+          {/* Institutional Editorial Kicker (Structured Institutional Badges) */}
           <div className="flex flex-wrap items-center gap-2 text-xs font-semibold tracking-wide">
-            <span className="px-2.5 py-0.5 rounded-full bg-blue-50 text-blue-700 border border-blue-200/80 font-bold uppercase tracking-wider text-[11px]">
+            <span className="px-2.5 py-0.5 rounded-md bg-blue-50 text-blue-800 border border-blue-200 font-bold uppercase tracking-wider text-[11px] font-mono-data">
               Rotaract SMS Lucknow
             </span>
             <span className="text-slate-300">·</span>
             <span className="text-slate-600 font-medium">Impact-A-Thon 2026</span>
             <span className="text-slate-300">·</span>
-            <span className="text-amber-700 font-semibold bg-amber-50 px-2 py-0.5 rounded border border-amber-200 text-[11px]">
+            <span className="text-amber-800 font-semibold bg-amber-50 px-2 py-0.5 rounded-md border border-amber-200 text-[11px] font-mono-data">
               Problem 202608
             </span>
           </div>
 
-          {/* Calibrated Headline: Human, Direct, with Rich Blue Accent */}
+          {/* Calibrated Headline: Human, Direct, Authoritative Solid Ink */}
           <h1 className="text-3xl sm:text-4xl md:text-[2.65rem] lg:text-[2.95rem] font-bold text-slate-900 tracking-[-0.035em] leading-[1.14] text-balance">
             {lang === 'en' ? (
               <>
-                Where Uttar Pradesh’s college degrees turn into <span className="text-blue-600 bg-gradient-to-r from-blue-700 to-indigo-600 bg-clip-text text-transparent">verified factory careers</span>.
+                Where Uttar Pradesh’s college degrees turn into <span className="text-blue-700">verified factory careers</span>.
               </>
             ) : (
               <>
-                उत्तर प्रदेश के युवाओं की डिग्री और उद्योगों की असली मांग के बीच का <span className="text-blue-600">सटीक सेतु</span>।
+                उत्तर प्रदेश के युवाओं की डिग्री और उद्योगों की असली मांग के बीच का <span className="text-blue-700">सटीक सेतु</span>।
               </>
             )}
           </h1>
@@ -161,10 +161,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({ lang, onNavigate }) =>
 
         {/* Right Column: Live Interactive Benchmark Instrument (Tactile with Rich Accents) */}
         <div className="md:col-span-5">
-          <div className="bg-white rounded-2xl border border-blue-100 p-5 sm:p-6 shadow-[0_4px_24px_rgba(37,99,235,0.06),0_1px_3px_rgba(0,0,0,0.04)] space-y-4 relative overflow-hidden">
-            
-            {/* Top Subtle Color Accent Bar */}
-            <div className="absolute top-0 inset-x-0 h-1 bg-gradient-to-r from-blue-600 via-indigo-500 to-amber-500" />
+          <div className="bg-white rounded-2xl border border-slate-200 border-t-4 border-t-blue-600 p-5 sm:p-6 shadow-sm space-y-4">
 
             {/* Widget Top Bar */}
             <div className="flex items-center justify-between pb-3 border-b border-slate-100 pt-1">
@@ -334,7 +331,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({ lang, onNavigate }) =>
           {/* Deliverable 1: Blue Theme */}
           <div
             onClick={() => onNavigate('assessment')}
-            className="cursor-pointer p-6 rounded-xl bg-white border border-blue-100 hover:border-blue-300 hover:shadow-md hover:shadow-blue-500/5 transition-all space-y-3 group"
+            className="cursor-pointer p-6 rounded-xl bg-white border border-blue-100 hover:border-blue-300 hover:shadow-md hover:shadow-blue-500/10 smooth-card space-y-3 group"
           >
             <div className="w-8 h-8 rounded-lg bg-blue-50 text-blue-700 font-mono-data font-bold text-xs flex items-center justify-center group-hover:bg-blue-600 group-hover:text-white transition-colors">
               01
@@ -354,7 +351,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({ lang, onNavigate }) =>
           {/* Deliverable 2: Emerald Theme */}
           <div
             onClick={() => onNavigate('gap-report')}
-            className="cursor-pointer p-6 rounded-xl bg-white border border-emerald-100 hover:border-emerald-300 hover:shadow-md hover:shadow-emerald-500/5 transition-all space-y-3 group"
+            className="cursor-pointer p-6 rounded-xl bg-white border border-emerald-100 hover:border-emerald-300 hover:shadow-md hover:shadow-emerald-500/10 smooth-card space-y-3 group"
           >
             <div className="w-8 h-8 rounded-lg bg-emerald-50 text-emerald-700 font-mono-data font-bold text-xs flex items-center justify-center group-hover:bg-emerald-600 group-hover:text-white transition-colors">
               02
@@ -374,7 +371,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({ lang, onNavigate }) =>
           {/* Deliverable 3: Amber Theme */}
           <div
             onClick={() => onNavigate('courses')}
-            className="cursor-pointer p-6 rounded-xl bg-white border border-amber-100 hover:border-amber-300 hover:shadow-md hover:shadow-amber-500/5 transition-all space-y-3 group"
+            className="cursor-pointer p-6 rounded-xl bg-white border border-amber-100 hover:border-amber-300 hover:shadow-md hover:shadow-amber-500/10 smooth-card space-y-3 group"
           >
             <div className="w-8 h-8 rounded-lg bg-amber-50 text-amber-700 font-mono-data font-bold text-xs flex items-center justify-center group-hover:bg-amber-600 group-hover:text-white transition-colors">
               03
@@ -394,7 +391,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({ lang, onNavigate }) =>
           {/* Deliverable 4: Indigo Theme */}
           <div
             onClick={() => onNavigate('jobs')}
-            className="cursor-pointer p-6 rounded-xl bg-white border border-indigo-100 hover:border-indigo-300 hover:shadow-md hover:shadow-indigo-500/5 transition-all space-y-3 group"
+            className="cursor-pointer p-6 rounded-xl bg-white border border-indigo-100 hover:border-indigo-300 hover:shadow-md hover:shadow-indigo-500/10 smooth-card space-y-3 group"
           >
             <div className="w-8 h-8 rounded-lg bg-indigo-50 text-indigo-700 font-mono-data font-bold text-xs flex items-center justify-center group-hover:bg-indigo-600 group-hover:text-white transition-colors">
               04
@@ -511,39 +508,45 @@ export const LandingPage: React.FC<LandingPageProps> = ({ lang, onNavigate }) =>
 
       </section>
 
-      {/* 6. INSTITUTIONAL CALLOUT BANNER: Rich Royal Blue Gradient Banner */}
-      <section className="bg-gradient-to-br from-[#0F294A] via-[#1E40AF] to-[#2563EB] text-white rounded-2xl p-8 sm:p-12 space-y-6 text-center max-w-4xl mx-auto shadow-xl shadow-blue-900/15">
-        
-        <div className="inline-flex items-center gap-2 text-xs text-blue-200 bg-white/10 px-3 py-1 rounded-full backdrop-blur-xs">
-          <span>Impact-A-Thon 2026</span>
-          <span>·</span>
-          <span>Rotaract SMS Lucknow</span>
+      {/* 6. INSTITUTIONAL CALLOUT: Grounded, Prestigious Deep Slate Card */}
+      <section className="bg-slate-900 text-white rounded-2xl p-8 sm:p-10 border border-slate-800 shadow-lg">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          
+          <div className="lg:col-span-8 space-y-3">
+            <div className="inline-flex items-center gap-2 text-[11px] font-mono-data font-semibold text-blue-300 bg-blue-950/80 px-2.5 py-1 rounded-md border border-blue-800/60">
+              <span>Impact-A-Thon 2026</span>
+              <span>·</span>
+              <span>Rotaract SMS Lucknow</span>
+              <span>·</span>
+              <span className="text-amber-300">Problem 202608</span>
+            </div>
+
+            <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-white">
+              Ready to test your trade readiness and connect with verified local employers?
+            </h2>
+
+            <p className="text-xs sm:text-sm text-slate-300 leading-[1.6] max-w-2xl">
+              100% free for all students, ITI trainees, and first-generation job seekers across Lucknow, Kanpur, and Barabanki. Backed by MSME, NCVT, and regional industrial associations.
+            </p>
+          </div>
+
+          <div className="lg:col-span-4 flex flex-col gap-3">
+            <button
+              onClick={() => onNavigate('assessment')}
+              className="h-11 px-6 rounded-lg bg-blue-600 hover:bg-blue-500 active:bg-blue-700 text-white font-bold text-sm transition-all shadow-md flex items-center justify-center gap-2 active:scale-[0.99] cursor-pointer"
+            >
+              <span>Start 3-Minute Assessment</span>
+              <ArrowRight className="w-4 h-4" />
+            </button>
+            <button
+              onClick={() => onNavigate('specs')}
+              className="h-10 px-5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-semibold transition-colors border border-slate-700 flex items-center justify-center cursor-pointer"
+            >
+              Inspect Design Tokens & Usability Data
+            </button>
+          </div>
+
         </div>
-
-        <h2 className="text-2xl sm:text-3xl font-bold tracking-tight max-w-xl mx-auto text-balance">
-          Ready to test your trade readiness and connect with verified local employers?
-        </h2>
-
-        <p className="text-xs sm:text-sm text-blue-100 max-w-lg mx-auto leading-relaxed">
-          Free for all students, ITI trainees, and first-generation job seekers across Uttar Pradesh. Sponsored by MSME & NCVT.
-        </p>
-
-        <div className="pt-2 flex flex-col sm:flex-row items-center justify-center gap-3.5">
-          <button
-            onClick={() => onNavigate('assessment')}
-            className="w-full sm:w-auto h-11 px-7 rounded-lg bg-white text-blue-900 hover:bg-blue-50 font-bold text-sm transition-all shadow-md flex items-center justify-center gap-2 active:scale-[0.99]"
-          >
-            <span>Start Free Assessment</span>
-            <ArrowRight className="w-4 h-4 text-blue-600" />
-          </button>
-          <button
-            onClick={() => onNavigate('specs')}
-            className="w-full sm:w-auto h-11 px-5 rounded-lg bg-white/15 hover:bg-white/20 text-white text-sm font-medium transition-colors border border-white/20"
-          >
-            View Design System & Research Tokens
-          </button>
-        </div>
-
       </section>
 
     </div>

@@ -239,8 +239,8 @@ export const JobsPage: React.FC<JobsPageProps> = ({
 
       {/* Screen 7a: Job/Internship Detail Modal */}
       {selectedJobDetail && (
-        <div className="fixed inset-0 z-50 bg-slate-900/40 backdrop-blur-xs flex items-center justify-center p-4">
-          <div className="bg-white rounded-2xl border border-slate-200 max-w-lg w-full p-6 sm:p-8 space-y-6 shadow-2xl">
+        <div className="fixed inset-0 z-50 bg-slate-900/40 backdrop-blur-xs flex items-center justify-center p-4 animate-in fade-in duration-200">
+          <div className="bg-white rounded-2xl border border-slate-200 max-w-lg w-full p-6 sm:p-8 space-y-6 shadow-2xl animate-in zoom-in-95 duration-200">
             
             <div className="flex items-start justify-between gap-3 border-b border-slate-100 pb-4">
               <div>
