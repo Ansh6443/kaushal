@@ -1,0 +1,31 @@
+{
+ "as_of": "sample",
+ "source": "sample-seed (not real market data)",
+ "demand": {
+  "excel": 0.8,
+  "sql": 0.85,
+  "statistics": 0.5,
+  "python": 0.8,
+  "data_viz": 0.55,
+  "communication": 0.7,
+  "html_css": 0.7,
+  "javascript": 0.85,
+  "git": 0.6,
+  "react": 0.65,
+  "rest_api": 0.6,
+  "seo": 0.6,
+  "social_media": 0.65,
+  "content_writing": 0.5,
+  "web_analytics": 0.5,
+  "electrical_safety": 0.8,
+  "circuit_reading": 0.55,
+  "wiring": 0.85,
+  "multimeter": 0.6,
+  "motor_basics": 0.5,
+  "customer_service": 0.85,
+  "billing_pos": 0.7,
+  "inventory": 0.55,
+  "basic_math": 0.4
+ },
+ "listings": []
+}

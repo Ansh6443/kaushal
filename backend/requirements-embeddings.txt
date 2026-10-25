@@ -1,0 +1,2 @@
+# Optional and large (pulls in PyTorch). Install only on a machine with space, then set KS_USE_EMBEDDINGS=1
+sentence-transformers>=2.7

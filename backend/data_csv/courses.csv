@@ -1,0 +1,22 @@
+﻿title,provider,skills,level,hours,cost_inr,languages,url,verified
+"Python for Data Science (4-week NPTEL course, IIT Madras)",NPTEL / SWAYAM,python|statistics|data_viz,intermediate,20,0,en,https://onlinecourses.nptel.ac.in/noc21_cs78/preview,yes
+"Basic Electrical Circuits (12-week NPTEL course, IIT Hyderabad)",NPTEL / SWAYAM,circuit_reading,intermediate,36,0,en,https://onlinecourses.nptel.ac.in/noc25_ee91/preview,yes
+Responsive Web Design (freeCodeCamp),freeCodeCamp,html_css,beginner,60,0,en,https://www.freecodecamp.org/learn/2022/responsive-web-design/,yes
+"Relational Database: SQL, PostgreSQL and Git (freeCodeCamp)",freeCodeCamp,sql|git,intermediate,60,0,en,https://www.freecodecamp.org/learn/relational-database/,yes
+Scientific Computing with Python (freeCodeCamp),freeCodeCamp,python,beginner,60,0,en,https://www.freecodecamp.org/learn/scientific-computing-with-python/,yes
+"LibreOffice Calc spreadsheet tutorials (Spoken Tutorial, IIT Bombay)","Spoken Tutorial, IIT Bombay",excel,beginner,10,0,en|hi,http://www.spoken-tutorial.org/list_videos?view=1&foss=LibreOffice-Suite-Calc&language=English,yes
+Fundamentals of Digital Marketing in Hindi (content from Google experts),ASDC course portal,seo|social_media,beginner,8,0,hi,https://courses.asdc.org.in/public/bundle/learn-the-fundamentals-of-digital-marketing-from-google-experts-and-grow-your-career,yes
+"JavaScript Algorithms and Data Structures (freeCodeCamp, archived)",freeCodeCamp,javascript,beginner,60,0,en,https://learn.freecodecamp.org,no
+"Front End Development Libraries (freeCodeCamp, archived: React)",freeCodeCamp,react,intermediate,50,0,en,https://learn.freecodecamp.org,no
+"Back End Development and APIs (freeCodeCamp, archived)",freeCodeCamp,rest_api,intermediate,50,0,en,https://learn.freecodecamp.org,no
+"Data Analysis with Python (freeCodeCamp, archived)",freeCodeCamp,python|statistics|data_viz,intermediate,60,0,en,https://learn.freecodecamp.org,no
+"Python tutorials in Hindi and English (Spoken Tutorial, IIT Bombay)","Spoken Tutorial, IIT Bombay",python,beginner,15,0,en|hi,https://spoken-tutorial.org/,no
+"Electrician Domestic Solutions (PMKVY job role, about 350 hours)",Skill India / PMKVY training centres,electrical_safety|wiring|multimeter,beginner,350,0,en,https://www.skillindiadigital.gov.in/home,no
+"Developing Soft Skills and Personality (8-week NPTEL course, IIT Kanpur)",NPTEL / SWAYAM,communication,beginner,12,0,en,https://onlinecourses.nptel.ac.in/noc25_hs174/preview,yes
+"Content Marketing training (HubSpot Academy, about 9 hours)",HubSpot Academy,content_writing,beginner,9,0,en,https://academy.hubspot.com/content-marketing-training,yes
+Analytics Academy: Google Analytics 4 courses on Skillshop,Google,web_analytics,beginner,5,0,en,https://support.google.com/analytics/answer/15440208?hl=en,yes
+Operation of Three-Phase and Single-Phase Induction Motors incl. DOL starting (NPTEL content),Ansys Innovation Space / NPTEL,motor_basics,intermediate,5,0,en,https://innovationspace.ansys.com/product/operation-of-three-phase-induction-motor-and-introduction-to-single-phase-induction-motor,yes
+Retail Sales Associate (In-Store Demonstrator) training,Tata STRIVE,customer_service|billing_pos,beginner,150,0,en,https://tatastrive.com/cpt_courses/retail-sales-associate-in-store-demonstrator/,yes
+"GST Workshop: GST basics and Tally (20 hours, online)",Navjyoti India Foundation,billing_pos|basic_math,beginner,20,0,en|hi,https://navjyoti.org.in/gst-workshop/,yes
+"Management of Inventory Systems (12-week NPTEL course, IIT Kharagpur)",NPTEL / SWAYAM,inventory,intermediate,30,0,en,https://onlinecourses.nptel.ac.in/noc25_mg42/preview,yes
+Basic arithmetic and percentages (Khan Academy),Khan Academy,basic_math,beginner,20,0,en,https://www.khanacademy.org,no

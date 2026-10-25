@@ -1,0 +1,626 @@
+[
+ {
+  "id": "q_basic_math_1",
+  "skill_id": "basic_math",
+  "difficulty": -0.8,
+  "text": "What is 15% of 200?",
+  "options": [
+   "20",
+   "30",
+   "25",
+   "35"
+  ],
+  "answer": 1
+ },
+ {
+  "id": "q_basic_math_2",
+  "skill_id": "basic_math",
+  "difficulty": 0.8,
+  "text": "A shirt costs ₹800 after a 20% discount. What was the original price?",
+  "options": [
+   "₹960",
+   "₹1000",
+   "₹1040",
+   "₹900"
+  ],
+  "answer": 1
+ },
+ {
+  "id": "q_excel_1",
+  "skill_id": "excel",
+  "difficulty": -0.8,
+  "text": "Which function adds the numbers in cells A1 to A5?",
+  "options": [
+   "=ADD(A1:A5)",
+   "=SUM(A1:A5)",
+   "=TOTAL(A1:A5)",
+   "=PLUS(A1:A5)"
+  ],
+  "answer": 1
+ },
+ {
+  "id": "q_excel_2",
+  "skill_id": "excel",
+  "difficulty": 0.8,
+  "text": "Which function looks up a value in the first column of a table and returns a value from another column?",
+  "options": [
+   "VLOOKUP",
+   "COUNTIF",
+   "CONCAT",
+   "ROUND"
+  ],
+  "answer": 0
+ },
+ {
+  "id": "q_sql_1",
+  "skill_id": "sql",
+  "difficulty": -0.8,
+  "text": "Which clause filters rows in a SQL query?",
+  "options": [
+   "ORDER BY",
+   "GROUP BY",
+   "WHERE",
+   "LIMIT"
+  ],
+  "answer": 2
+ },
+ {
+  "id": "q_sql_2",
+  "skill_id": "sql",
+  "difficulty": 0.8,
+  "text": "Which JOIN returns all rows from the left table and the matching rows from the right?",
+  "options": [
+   "INNER JOIN",
+   "LEFT JOIN",
+   "CROSS JOIN",
+   "SELF JOIN"
+  ],
+  "answer": 1
+ },
+ {
+  "id": "q_statistics_1",
+  "skill_id": "statistics",
+  "difficulty": -0.8,
+  "text": "The median of 3, 9, 4, 7, 5 is:",
+  "options": [
+   "4",
+   "5",
+   "7",
+   "9"
+  ],
+  "answer": 1
+ },
+ {
+  "id": "q_statistics_2",
+  "skill_id": "statistics",
+  "difficulty": 0.8,
+  "text": "A very small p-value (for example 0.01) in a hypothesis test usually suggests:",
+  "options": [
+   "The data is wrong",
+   "Evidence against the null hypothesis",
+   "The sample is too large",
+   "The result is not important"
+  ],
+  "answer": 1
+ },
+ {
+  "id": "q_python_1",
+  "skill_id": "python",
+  "difficulty": -0.8,
+  "text": "Which keyword defines a function in Python?",
+  "options": [
+   "func",
+   "define",
+   "def",
+   "function"
+  ],
+  "answer": 2
+ },
+ {
+  "id": "q_python_2",
+  "skill_id": "python",
+  "difficulty": 0.8,
+  "text": "What does [x*x for x in range(4)] evaluate to?",
+  "options": [
+   "[0, 1, 4, 9]",
+   "[1, 4, 9, 16]",
+   "[0, 2, 4, 6]",
+   "[0, 1, 2, 3]"
+  ],
+  "answer": 0
+ },
+ {
+  "id": "q_data_viz_1",
+  "skill_id": "data_viz",
+  "difficulty": -0.8,
+  "text": "Which chart best shows how a value changes over time?",
+  "options": [
+   "Pie chart",
+   "Line chart",
+   "Scatter plot",
+   "Treemap"
+  ],
+  "answer": 1
+ },
+ {
+  "id": "q_data_viz_2",
+  "skill_id": "data_viz",
+  "difficulty": 0.8,
+  "text": "Why is a truncated y-axis on a bar chart considered misleading?",
+  "options": [
+   "It hides the legend",
+   "It exaggerates differences between bars",
+   "It removes gridlines",
+   "It changes the data"
+  ],
+  "answer": 1
+ },
+ {
+  "id": "q_communication_1",
+  "skill_id": "communication",
+  "difficulty": -0.8,
+  "text": "A customer is upset about a delay. What is the best first step?",
+  "options": [
+   "Explain company policy",
+   "Listen and acknowledge the problem",
+   "Ask them to call later",
+   "Transfer the call immediately"
+  ],
+  "answer": 1
+ },
+ {
+  "id": "q_communication_2",
+  "skill_id": "communication",
+  "difficulty": 0.8,
+  "text": "When presenting to a non-technical audience, you should:",
+  "options": [
+   "Use as much jargon as possible",
+   "Lead with the key finding in plain language",
+   "Show every table you have",
+   "Avoid examples"
+  ],
+  "answer": 1
+ },
+ {
+  "id": "q_html_css_1",
+  "skill_id": "html_css",
+  "difficulty": -0.8,
+  "text": "Which HTML tag creates a hyperlink?",
+  "options": [
+   "<link>",
+   "<a>",
+   "<href>",
+   "<url>"
+  ],
+  "answer": 1
+ },
+ {
+  "id": "q_html_css_2",
+  "skill_id": "html_css",
+  "difficulty": 0.8,
+  "text": "Which CSS feature is best for laying out items in a flexible row or column?",
+  "options": [
+   "float",
+   "Flexbox",
+   "position: static",
+   "table-layout"
+  ],
+  "answer": 1
+ },
+ {
+  "id": "q_javascript_1",
+  "skill_id": "javascript",
+  "difficulty": -0.8,
+  "text": "Which keyword declares a block-scoped variable that can be reassigned?",
+  "options": [
+   "var",
+   "let",
+   "const",
+   "static"
+  ],
+  "answer": 1
+ },
+ {
+  "id": "q_javascript_2",
+  "skill_id": "javascript",
+  "difficulty": 0.8,
+  "text": "What does await do inside an async function?",
+  "options": [
+   "Blocks the whole browser",
+   "Pauses that function until the promise settles",
+   "Creates a new thread",
+   "Cancels the promise"
+  ],
+  "answer": 1
+ },
+ {
+  "id": "q_git_1",
+  "skill_id": "git",
+  "difficulty": -0.8,
+  "text": "Which command records staged changes as a commit?",
+  "options": [
+   "git push",
+   "git commit",
+   "git pull",
+   "git clone"
+  ],
+  "answer": 1
+ },
+ {
+  "id": "q_git_2",
+  "skill_id": "git",
+  "difficulty": 0.8,
+  "text": "Which command combines another branch's history into the current branch?",
+  "options": [
+   "git merge",
+   "git clone",
+   "git init",
+   "git remote"
+  ],
+  "answer": 0
+ },
+ {
+  "id": "q_react_1",
+  "skill_id": "react",
+  "difficulty": -0.8,
+  "text": "In React, what is used to manage a component's local, changing data?",
+  "options": [
+   "props only",
+   "state (useState)",
+   "CSS classes",
+   "the HTML title"
+  ],
+  "answer": 1
+ },
+ {
+  "id": "q_react_2",
+  "skill_id": "react",
+  "difficulty": 0.8,
+  "text": "Why does React ask for a unique key on list items?",
+  "options": [
+   "To style them",
+   "To track which items changed, were added or removed",
+   "To make them clickable",
+   "To sort them"
+  ],
+  "answer": 1
+ },
+ {
+  "id": "q_rest_api_1",
+  "skill_id": "rest_api",
+  "difficulty": -0.8,
+  "text": "Which HTTP method is normally used to fetch data without changing it?",
+  "options": [
+   "POST",
+   "GET",
+   "DELETE",
+   "PUT"
+  ],
+  "answer": 1
+ },
+ {
+  "id": "q_rest_api_2",
+  "skill_id": "rest_api",
+  "difficulty": 0.8,
+  "text": "Which status code is the conventional response when a new resource is successfully created?",
+  "options": [
+   "200",
+   "201",
+   "204",
+   "301"
+  ],
+  "answer": 1
+ },
+ {
+  "id": "q_seo_1",
+  "skill_id": "seo",
+  "difficulty": -0.8,
+  "text": "What does SEO aim to improve?",
+  "options": [
+   "Email delivery",
+   "Visibility in search engine results",
+   "Website colours",
+   "Printer speed"
+  ],
+  "answer": 1
+ },
+ {
+  "id": "q_seo_2",
+  "skill_id": "seo",
+  "difficulty": 0.8,
+  "text": "Which is an on-page SEO element?",
+  "options": [
+   "Title tag and meta description",
+   "Server rack location",
+   "Paid ad budget",
+   "Email subject line"
+  ],
+  "answer": 0
+ },
+ {
+  "id": "q_social_media_1",
+  "skill_id": "social_media",
+  "difficulty": -0.8,
+  "text": "Which metric shows how many people saw a post at least once?",
+  "options": [
+   "Reach",
+   "Bounce rate",
+   "Churn",
+   "Latency"
+  ],
+  "answer": 0
+ },
+ {
+  "id": "q_social_media_2",
+  "skill_id": "social_media",
+  "difficulty": 0.8,
+  "text": "Engagement rate is commonly calculated as:",
+  "options": [
+   "Interactions divided by reach or followers",
+   "Followers divided by posts",
+   "Posts divided by days",
+   "Clicks divided by revenue"
+  ],
+  "answer": 0
+ },
+ {
+  "id": "q_content_writing_1",
+  "skill_id": "content_writing",
+  "difficulty": -0.8,
+  "text": "Which best describes good web content?",
+  "options": [
+   "Long, dense paragraphs",
+   "Clear, useful and written for the reader",
+   "One keyword repeated many times",
+   "Copied from competitors"
+  ],
+  "answer": 1
+ },
+ {
+  "id": "q_content_writing_2",
+  "skill_id": "content_writing",
+  "difficulty": 0.8,
+  "text": "What is the purpose of a call to action (CTA)?",
+  "options": [
+   "To tell readers what step to take next",
+   "To decorate the page",
+   "To cite sources",
+   "To end the paragraph"
+  ],
+  "answer": 0
+ },
+ {
+  "id": "q_web_analytics_1",
+  "skill_id": "web_analytics",
+  "difficulty": -0.8,
+  "text": "Bounce rate traditionally refers to visits that:",
+  "options": [
+   "End in a purchase",
+   "Leave after a single page without further interaction",
+   "Last more than 10 minutes",
+   "Come from email"
+  ],
+  "answer": 1
+ },
+ {
+  "id": "q_web_analytics_2",
+  "skill_id": "web_analytics",
+  "difficulty": 0.8,
+  "text": "A 'conversion' in analytics means:",
+  "options": [
+   "Any page view",
+   "A visitor completing a goal action such as a purchase or sign-up",
+   "Changing the website theme",
+   "Converting file formats"
+  ],
+  "answer": 1
+ },
+ {
+  "id": "q_electrical_safety_1",
+  "skill_id": "electrical_safety",
+  "difficulty": -0.8,
+  "text": "Before working on a circuit you should first:",
+  "options": [
+   "Touch it to check",
+   "Switch off and isolate the supply",
+   "Wear loose clothing",
+   "Use wet hands"
+  ],
+  "answer": 1
+ },
+ {
+  "id": "q_electrical_safety_2",
+  "skill_id": "electrical_safety",
+  "difficulty": 0.8,
+  "text": "What is the purpose of earthing?",
+  "options": [
+   "To increase voltage",
+   "To give fault current a safe path to ground",
+   "To reduce bulb brightness",
+   "To store charge"
+  ],
+  "answer": 1
+ },
+ {
+  "id": "q_circuit_reading_1",
+  "skill_id": "circuit_reading",
+  "difficulty": -0.8,
+  "text": "Ohm's law is:",
+  "options": [
+   "V = I × R",
+   "V = I + R",
+   "I = V × R",
+   "R = V × I"
+  ],
+  "answer": 0
+ },
+ {
+  "id": "q_circuit_reading_2",
+  "skill_id": "circuit_reading",
+  "difficulty": 0.8,
+  "text": "Two 10 Ω resistors in parallel have a total resistance of:",
+  "options": [
+   "20 Ω",
+   "10 Ω",
+   "5 Ω",
+   "2 Ω"
+  ],
+  "answer": 2
+ },
+ {
+  "id": "q_wiring_1",
+  "skill_id": "wiring",
+  "difficulty": -0.8,
+  "text": "Which device protects a household circuit from overload and short circuit?",
+  "options": [
+   "MCB",
+   "Doorbell",
+   "Fan regulator",
+   "Switch plate"
+  ],
+  "answer": 0
+ },
+ {
+  "id": "q_wiring_2",
+  "skill_id": "wiring",
+  "difficulty": 0.8,
+  "text": "Why should a switch be fitted on the live wire rather than the neutral?",
+  "options": [
+   "So the appliance is dead when the switch is off",
+   "To save wire",
+   "To raise voltage",
+   "To reduce noise"
+  ],
+  "answer": 0
+ },
+ {
+  "id": "q_multimeter_1",
+  "skill_id": "multimeter",
+  "difficulty": -0.8,
+  "text": "To measure the resistance of a component, the circuit supply should be:",
+  "options": [
+   "On",
+   "Off",
+   "Doubled",
+   "Connected to earth only"
+  ],
+  "answer": 1
+ },
+ {
+  "id": "q_multimeter_2",
+  "skill_id": "multimeter",
+  "difficulty": 0.8,
+  "text": "A multimeter on continuity gives no beep across a fuse. This most likely means the fuse is:",
+  "options": [
+   "Good",
+   "Blown (open circuit)",
+   "Overheating",
+   "Shorted"
+  ],
+  "answer": 1
+ },
+ {
+  "id": "q_motor_basics_1",
+  "skill_id": "motor_basics",
+  "difficulty": -0.8,
+  "text": "Which device switches a motor on and off through a control circuit while carrying the motor current?",
+  "options": [
+   "Contactor",
+   "Doorbell",
+   "Dimmer",
+   "Bulb holder"
+  ],
+  "answer": 0
+ },
+ {
+  "id": "q_motor_basics_2",
+  "skill_id": "motor_basics",
+  "difficulty": 0.8,
+  "text": "A DOL (direct-on-line) starter is mainly used for:",
+  "options": [
+   "Small motors where full-voltage starting is acceptable",
+   "Reducing voltage with an autotransformer",
+   "Charging batteries",
+   "Speed control of large motors"
+  ],
+  "answer": 0
+ },
+ {
+  "id": "q_customer_service_1",
+  "skill_id": "customer_service",
+  "difficulty": -0.8,
+  "text": "A customer asks for a product that is out of stock. Best response:",
+  "options": [
+   "Say 'we don't have it'",
+   "Apologise and offer alternatives or an expected restock date",
+   "Ignore the request",
+   "Ask them to come back"
+  ],
+  "answer": 1
+ },
+ {
+  "id": "q_customer_service_2",
+  "skill_id": "customer_service",
+  "difficulty": 0.8,
+  "text": "Best way to handle a repeated complaint from the same customer:",
+  "options": [
+   "Avoid them",
+   "Log it, own the follow-up and tell them the next step",
+   "Blame another team",
+   "Offer random discounts"
+  ],
+  "answer": 1
+ },
+ {
+  "id": "q_billing_pos_1",
+  "skill_id": "billing_pos",
+  "difficulty": -0.8,
+  "text": "An item costs ₹250 and GST is 18%. What is the GST amount?",
+  "options": [
+   "₹18",
+   "₹45",
+   "₹40",
+   "₹50"
+  ],
+  "answer": 1
+ },
+ {
+  "id": "q_billing_pos_2",
+  "skill_id": "billing_pos",
+  "difficulty": 0.8,
+  "text": "A customer pays ₹2,000 for a bill of ₹1,347.50. What change is due?",
+  "options": [
+   "₹652.50",
+   "₹652.00",
+   "₹662.50",
+   "₹642.50"
+  ],
+  "answer": 0
+ },
+ {
+  "id": "q_inventory_1",
+  "skill_id": "inventory",
+  "difficulty": -0.8,
+  "text": "FIFO in stock handling means:",
+  "options": [
+   "First in, first out",
+   "Fast in, fast out",
+   "Final in, first out",
+   "First inspect, first order"
+  ],
+  "answer": 0
+ },
+ {
+  "id": "q_inventory_2",
+  "skill_id": "inventory",
+  "difficulty": 0.8,
+  "text": "Reorder level is best described as:",
+  "options": [
+   "The stock level at which a new order should be placed",
+   "Maximum storage capacity",
+   "Number of damaged items",
+   "Total yearly sales"
+  ],
+  "answer": 0
+ }
+]

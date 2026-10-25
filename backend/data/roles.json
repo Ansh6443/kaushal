@@ -1,0 +1,175 @@
+[
+ {
+  "id": "data_analyst",
+  "name": "Data Analyst (Trainee)",
+  "sector": "IT / Data",
+  "nsqf_level": 5,
+  "search_terms": [
+   "data analyst",
+   "junior data analyst"
+  ],
+  "skills": [
+   {
+    "skill_id": "excel",
+    "weight": 0.2
+   },
+   {
+    "skill_id": "sql",
+    "weight": 0.25
+   },
+   {
+    "skill_id": "statistics",
+    "weight": 0.15
+   },
+   {
+    "skill_id": "python",
+    "weight": 0.2
+   },
+   {
+    "skill_id": "data_viz",
+    "weight": 0.1
+   },
+   {
+    "skill_id": "communication",
+    "weight": 0.1
+   }
+  ],
+  "target_level": 65
+ },
+ {
+  "id": "web_developer",
+  "name": "Web Developer (Junior)",
+  "sector": "IT / Web",
+  "nsqf_level": 5,
+  "search_terms": [
+   "web developer",
+   "frontend developer"
+  ],
+  "skills": [
+   {
+    "skill_id": "html_css",
+    "weight": 0.2
+   },
+   {
+    "skill_id": "javascript",
+    "weight": 0.25
+   },
+   {
+    "skill_id": "git",
+    "weight": 0.1
+   },
+   {
+    "skill_id": "react",
+    "weight": 0.2
+   },
+   {
+    "skill_id": "rest_api",
+    "weight": 0.15
+   },
+   {
+    "skill_id": "python",
+    "weight": 0.1
+   }
+  ],
+  "target_level": 65
+ },
+ {
+  "id": "digital_marketer",
+  "name": "Digital Marketing Executive",
+  "sector": "Marketing",
+  "nsqf_level": 5,
+  "search_terms": [
+   "digital marketing executive",
+   "seo executive"
+  ],
+  "skills": [
+   {
+    "skill_id": "seo",
+    "weight": 0.25
+   },
+   {
+    "skill_id": "social_media",
+    "weight": 0.25
+   },
+   {
+    "skill_id": "content_writing",
+    "weight": 0.2
+   },
+   {
+    "skill_id": "web_analytics",
+    "weight": 0.15
+   },
+   {
+    "skill_id": "communication",
+    "weight": 0.15
+   }
+  ],
+  "target_level": 65
+ },
+ {
+  "id": "electrician",
+  "name": "Electrician (ITI / Vocational)",
+  "sector": "Electrical",
+  "nsqf_level": 4,
+  "search_terms": [
+   "electrician",
+   "electrical technician"
+  ],
+  "skills": [
+   {
+    "skill_id": "electrical_safety",
+    "weight": 0.25
+   },
+   {
+    "skill_id": "circuit_reading",
+    "weight": 0.15
+   },
+   {
+    "skill_id": "wiring",
+    "weight": 0.25
+   },
+   {
+    "skill_id": "multimeter",
+    "weight": 0.2
+   },
+   {
+    "skill_id": "motor_basics",
+    "weight": 0.15
+   }
+  ],
+  "target_level": 65
+ },
+ {
+  "id": "retail_associate",
+  "name": "Retail Sales Associate",
+  "sector": "Retail",
+  "nsqf_level": 4,
+  "search_terms": [
+   "retail sales associate",
+   "store executive"
+  ],
+  "skills": [
+   {
+    "skill_id": "customer_service",
+    "weight": 0.3
+   },
+   {
+    "skill_id": "billing_pos",
+    "weight": 0.25
+   },
+   {
+    "skill_id": "inventory",
+    "weight": 0.2
+   },
+   {
+    "skill_id": "communication",
+    "weight": 0.15
+   },
+   {
+    "skill_id": "basic_math",
+    "weight": 0.1
+   }
+  ],
+  "target_level": 65
+ }
+]

@@ -1,0 +1,49 @@
+﻿skill_id,difficulty,text,option_a,option_b,option_c,option_d,answer
+basic_math,easy,What is 15% of 200?,20,30,25,35,B
+basic_math,hard,A shirt costs ₹800 after a 20% discount. What was the original price?,₹960,₹1000,₹1040,₹900,B
+excel,easy,Which function adds the numbers in cells A1 to A5?,=ADD(A1:A5),=SUM(A1:A5),=TOTAL(A1:A5),=PLUS(A1:A5),B
+excel,hard,Which function looks up a value in the first column of a table and returns a value from another column?,VLOOKUP,COUNTIF,CONCAT,ROUND,A
+sql,easy,Which clause filters rows in a SQL query?,ORDER BY,GROUP BY,WHERE,LIMIT,C
+sql,hard,Which JOIN returns all rows from the left table and the matching rows from the right?,INNER JOIN,LEFT JOIN,CROSS JOIN,SELF JOIN,B
+statistics,easy,"The median of 3, 9, 4, 7, 5 is:",4,5,7,9,B
+statistics,hard,A very small p-value (for example 0.01) in a hypothesis test usually suggests:,The data is wrong,Evidence against the null hypothesis,The sample is too large,The result is not important,B
+python,easy,Which keyword defines a function in Python?,func,define,def,function,C
+python,hard,What does [x*x for x in range(4)] evaluate to?,"[0, 1, 4, 9]","[1, 4, 9, 16]","[0, 2, 4, 6]","[0, 1, 2, 3]",A
+data_viz,easy,Which chart best shows how a value changes over time?,Pie chart,Line chart,Scatter plot,Treemap,B
+data_viz,hard,Why is a truncated y-axis on a bar chart considered misleading?,It hides the legend,It exaggerates differences between bars,It removes gridlines,It changes the data,B
+communication,easy,A customer is upset about a delay. What is the best first step?,Explain company policy,Listen and acknowledge the problem,Ask them to call later,Transfer the call immediately,B
+communication,hard,"When presenting to a non-technical audience, you should:",Use as much jargon as possible,Lead with the key finding in plain language,Show every table you have,Avoid examples,B
+html_css,easy,Which HTML tag creates a hyperlink?,<link>,<a>,<href>,<url>,B
+html_css,hard,Which CSS feature is best for laying out items in a flexible row or column?,float,Flexbox,position: static,table-layout,B
+javascript,easy,Which keyword declares a block-scoped variable that can be reassigned?,var,let,const,static,B
+javascript,hard,What does await do inside an async function?,Blocks the whole browser,Pauses that function until the promise settles,Creates a new thread,Cancels the promise,B
+git,easy,Which command records staged changes as a commit?,git push,git commit,git pull,git clone,B
+git,hard,Which command combines another branch's history into the current branch?,git merge,git clone,git init,git remote,A
+react,easy,"In React, what is used to manage a component's local, changing data?",props only,state (useState),CSS classes,the HTML title,B
+react,hard,Why does React ask for a unique key on list items?,To style them,"To track which items changed, were added or removed",To make them clickable,To sort them,B
+rest_api,easy,Which HTTP method is normally used to fetch data without changing it?,POST,GET,DELETE,PUT,B
+rest_api,hard,Which status code is the conventional response when a new resource is successfully created?,200,201,204,301,B
+seo,easy,What does SEO aim to improve?,Email delivery,Visibility in search engine results,Website colours,Printer speed,B
+seo,hard,Which is an on-page SEO element?,Title tag and meta description,Server rack location,Paid ad budget,Email subject line,A
+social_media,easy,Which metric shows how many people saw a post at least once?,Reach,Bounce rate,Churn,Latency,A
+social_media,hard,Engagement rate is commonly calculated as:,Interactions divided by reach or followers,Followers divided by posts,Posts divided by days,Clicks divided by revenue,A
+content_writing,easy,Which best describes good web content?,"Long, dense paragraphs","Clear, useful and written for the reader",One keyword repeated many times,Copied from competitors,B
+content_writing,hard,What is the purpose of a call to action (CTA)?,To tell readers what step to take next,To decorate the page,To cite sources,To end the paragraph,A
+web_analytics,easy,Bounce rate traditionally refers to visits that:,End in a purchase,Leave after a single page without further interaction,Last more than 10 minutes,Come from email,B
+web_analytics,hard,A 'conversion' in analytics means:,Any page view,A visitor completing a goal action such as a purchase or sign-up,Changing the website theme,Converting file formats,B
+electrical_safety,easy,Before working on a circuit you should first:,Touch it to check,Switch off and isolate the supply,Wear loose clothing,Use wet hands,B
+electrical_safety,hard,What is the purpose of earthing?,To increase voltage,To give fault current a safe path to ground,To reduce bulb brightness,To store charge,B
+circuit_reading,easy,Ohm's law is:,V = I × R,V = I + R,I = V × R,R = V × I,A
+circuit_reading,hard,Two 10 Ω resistors in parallel have a total resistance of:,20 Ω,10 Ω,5 Ω,2 Ω,C
+wiring,easy,Which device protects a household circuit from overload and short circuit?,MCB,Doorbell,Fan regulator,Switch plate,A
+wiring,hard,Why should a switch be fitted on the live wire rather than the neutral?,So the appliance is dead when the switch is off,To save wire,To raise voltage,To reduce noise,A
+multimeter,easy,"To measure the resistance of a component, the circuit supply should be:",On,Off,Doubled,Connected to earth only,B
+multimeter,hard,A multimeter on continuity gives no beep across a fuse. This most likely means the fuse is:,Good,Blown (open circuit),Overheating,Shorted,B
+motor_basics,easy,Which device switches a motor on and off through a control circuit while carrying the motor current?,Contactor,Doorbell,Dimmer,Bulb holder,A
+motor_basics,hard,A DOL (direct-on-line) starter is mainly used for:,Small motors where full-voltage starting is acceptable,Reducing voltage with an autotransformer,Charging batteries,Speed control of large motors,A
+customer_service,easy,A customer asks for a product that is out of stock. Best response:,Say 'we don't have it',Apologise and offer alternatives or an expected restock date,Ignore the request,Ask them to come back,B
+customer_service,hard,Best way to handle a repeated complaint from the same customer:,Avoid them,"Log it, own the follow-up and tell them the next step",Blame another team,Offer random discounts,B
+billing_pos,easy,An item costs ₹250 and GST is 18%. What is the GST amount?,₹18,₹45,₹40,₹50,B
+billing_pos,hard,"A customer pays ₹2,000 for a bill of ₹1,347.50. What change is due?",₹652.50,₹652.00,₹662.50,₹642.50,A
+inventory,easy,FIFO in stock handling means:,"First in, first out","Fast in, fast out","Final in, first out","First inspect, first order",A
+inventory,hard,Reorder level is best described as:,The stock level at which a new order should be placed,Maximum storage capacity,Number of damaged items,Total yearly sales,A

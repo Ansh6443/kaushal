@@ -1,0 +1,325 @@
+[
+ {
+  "id": "basic_math",
+  "name": "Basic Math & Numeracy",
+  "category": "foundation",
+  "prerequisites": [],
+  "aliases": [
+   "basic math",
+   "numeracy",
+   "arithmetic",
+   "mathematics"
+  ]
+ },
+ {
+  "id": "excel",
+  "name": "Spreadsheets (Excel)",
+  "category": "data",
+  "prerequisites": [
+   "basic_math"
+  ],
+  "aliases": [
+   "excel",
+   "spreadsheet",
+   "spreadsheets",
+   "google sheets",
+   "pivot table",
+   "vlookup"
+  ]
+ },
+ {
+  "id": "sql",
+  "name": "SQL & Databases",
+  "category": "data",
+  "prerequisites": [],
+  "aliases": [
+   "sql",
+   "mysql",
+   "postgresql",
+   "database",
+   "databases",
+   "sqlite"
+  ]
+ },
+ {
+  "id": "statistics",
+  "name": "Statistics",
+  "category": "data",
+  "prerequisites": [
+   "basic_math"
+  ],
+  "aliases": [
+   "statistics",
+   "statistical",
+   "probability",
+   "hypothesis testing",
+   "regression"
+  ]
+ },
+ {
+  "id": "python",
+  "name": "Python Programming",
+  "category": "programming",
+  "prerequisites": [],
+  "aliases": [
+   "python",
+   "pandas",
+   "numpy"
+  ]
+ },
+ {
+  "id": "data_viz",
+  "name": "Data Visualization",
+  "category": "data",
+  "prerequisites": [
+   "excel"
+  ],
+  "aliases": [
+   "data visualization",
+   "power bi",
+   "tableau",
+   "matplotlib",
+   "dashboard",
+   "dashboards"
+  ]
+ },
+ {
+  "id": "communication",
+  "name": "Communication",
+  "category": "soft",
+  "prerequisites": [],
+  "aliases": [
+   "communication",
+   "presentation",
+   "presentations",
+   "public speaking",
+   "report writing"
+  ]
+ },
+ {
+  "id": "html_css",
+  "name": "HTML & CSS",
+  "category": "web",
+  "prerequisites": [],
+  "aliases": [
+   "html",
+   "css",
+   "html5",
+   "css3",
+   "bootstrap",
+   "tailwind"
+  ]
+ },
+ {
+  "id": "javascript",
+  "name": "JavaScript",
+  "category": "web",
+  "prerequisites": [
+   "html_css"
+  ],
+  "aliases": [
+   "javascript",
+   "typescript",
+   "node.js",
+   "nodejs"
+  ]
+ },
+ {
+  "id": "git",
+  "name": "Git & Version Control",
+  "category": "web",
+  "prerequisites": [],
+  "aliases": [
+   "git",
+   "github",
+   "gitlab",
+   "version control"
+  ]
+ },
+ {
+  "id": "react",
+  "name": "React",
+  "category": "web",
+  "prerequisites": [
+   "javascript"
+  ],
+  "aliases": [
+   "react",
+   "reactjs",
+   "react.js",
+   "next.js",
+   "nextjs"
+  ]
+ },
+ {
+  "id": "rest_api",
+  "name": "REST APIs & Backend Basics",
+  "category": "web",
+  "prerequisites": [],
+  "aliases": [
+   "rest api",
+   "rest apis",
+   "fastapi",
+   "flask",
+   "django",
+   "express"
+  ]
+ },
+ {
+  "id": "seo",
+  "name": "Search Engine Optimization",
+  "category": "marketing",
+  "prerequisites": [],
+  "aliases": [
+   "seo",
+   "search engine optimization",
+   "keyword research"
+  ]
+ },
+ {
+  "id": "social_media",
+  "name": "Social Media Marketing",
+  "category": "marketing",
+  "prerequisites": [],
+  "aliases": [
+   "social media",
+   "instagram",
+   "facebook ads",
+   "meta ads",
+   "social media marketing"
+  ]
+ },
+ {
+  "id": "content_writing",
+  "name": "Content Writing",
+  "category": "marketing",
+  "prerequisites": [],
+  "aliases": [
+   "content writing",
+   "copywriting",
+   "blogging",
+   "blog writing"
+  ]
+ },
+ {
+  "id": "web_analytics",
+  "name": "Web Analytics",
+  "category": "marketing",
+  "prerequisites": [],
+  "aliases": [
+   "google analytics",
+   "web analytics",
+   "ga4"
+  ]
+ },
+ {
+  "id": "electrical_safety",
+  "name": "Electrical Safety",
+  "category": "vocational",
+  "prerequisites": [],
+  "aliases": [
+   "electrical safety",
+   "ppe",
+   "lockout"
+  ]
+ },
+ {
+  "id": "circuit_reading",
+  "name": "Circuit Reading & Basics",
+  "category": "vocational",
+  "prerequisites": [
+   "basic_math"
+  ],
+  "aliases": [
+   "circuit",
+   "circuits",
+   "circuit diagram",
+   "ohm's law",
+   "ohms law",
+   "schematic"
+  ]
+ },
+ {
+  "id": "wiring",
+  "name": "Wiring & Installation",
+  "category": "vocational",
+  "prerequisites": [
+   "electrical_safety",
+   "circuit_reading"
+  ],
+  "aliases": [
+   "wiring",
+   "house wiring",
+   "conduit",
+   "earthing"
+  ]
+ },
+ {
+  "id": "multimeter",
+  "name": "Testing & Fault Finding",
+  "category": "vocational",
+  "prerequisites": [
+   "circuit_reading"
+  ],
+  "aliases": [
+   "multimeter",
+   "fault finding",
+   "troubleshooting"
+  ]
+ },
+ {
+  "id": "motor_basics",
+  "name": "Motors & Switchgear",
+  "category": "vocational",
+  "prerequisites": [
+   "circuit_reading"
+  ],
+  "aliases": [
+   "motor",
+   "motors",
+   "switchgear",
+   "mcb",
+   "contactor",
+   "starter"
+  ]
+ },
+ {
+  "id": "customer_service",
+  "name": "Customer Service",
+  "category": "retail",
+  "prerequisites": [],
+  "aliases": [
+   "customer service",
+   "customer support",
+   "customer handling",
+   "client handling"
+  ]
+ },
+ {
+  "id": "billing_pos",
+  "name": "Billing & POS",
+  "category": "retail",
+  "prerequisites": [
+   "basic_math"
+  ],
+  "aliases": [
+   "billing",
+   "pos",
+   "point of sale",
+   "invoicing",
+   "tally",
+   "cash handling"
+  ]
+ },
+ {
+  "id": "inventory",
+  "name": "Inventory & Stock Handling",
+  "category": "retail",
+  "prerequisites": [],
+  "aliases": [
+   "inventory",
+   "stock management",
+   "warehouse"
+  ]
+ }
+]

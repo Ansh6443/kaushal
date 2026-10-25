@@ -1,0 +1,351 @@
+[
+ {
+  "id": "c01",
+  "title": "Python for Data Science (4-week NPTEL course, IIT Madras)",
+  "provider": "NPTEL / SWAYAM",
+  "skills": [
+   "python",
+   "statistics",
+   "data_viz"
+  ],
+  "level": "intermediate",
+  "hours": 20,
+  "cost_inr": 0,
+  "languages": [
+   "en"
+  ],
+  "url": "https://onlinecourses.nptel.ac.in/noc21_cs78/preview",
+  "verified": true
+ },
+ {
+  "id": "c02",
+  "title": "Basic Electrical Circuits (12-week NPTEL course, IIT Hyderabad)",
+  "provider": "NPTEL / SWAYAM",
+  "skills": [
+   "circuit_reading"
+  ],
+  "level": "intermediate",
+  "hours": 36,
+  "cost_inr": 0,
+  "languages": [
+   "en"
+  ],
+  "url": "https://onlinecourses.nptel.ac.in/noc25_ee91/preview",
+  "verified": true
+ },
+ {
+  "id": "c03",
+  "title": "Responsive Web Design (freeCodeCamp)",
+  "provider": "freeCodeCamp",
+  "skills": [
+   "html_css"
+  ],
+  "level": "beginner",
+  "hours": 60,
+  "cost_inr": 0,
+  "languages": [
+   "en"
+  ],
+  "url": "https://www.freecodecamp.org/learn/2022/responsive-web-design/",
+  "verified": true
+ },
+ {
+  "id": "c04",
+  "title": "Relational Database: SQL, PostgreSQL and Git (freeCodeCamp)",
+  "provider": "freeCodeCamp",
+  "skills": [
+   "sql",
+   "git"
+  ],
+  "level": "intermediate",
+  "hours": 60,
+  "cost_inr": 0,
+  "languages": [
+   "en"
+  ],
+  "url": "https://www.freecodecamp.org/learn/relational-database/",
+  "verified": true
+ },
+ {
+  "id": "c05",
+  "title": "Scientific Computing with Python (freeCodeCamp)",
+  "provider": "freeCodeCamp",
+  "skills": [
+   "python"
+  ],
+  "level": "beginner",
+  "hours": 60,
+  "cost_inr": 0,
+  "languages": [
+   "en"
+  ],
+  "url": "https://www.freecodecamp.org/learn/scientific-computing-with-python/",
+  "verified": true
+ },
+ {
+  "id": "c06",
+  "title": "LibreOffice Calc spreadsheet tutorials (Spoken Tutorial, IIT Bombay)",
+  "provider": "Spoken Tutorial, IIT Bombay",
+  "skills": [
+   "excel"
+  ],
+  "level": "beginner",
+  "hours": 10,
+  "cost_inr": 0,
+  "languages": [
+   "en",
+   "hi"
+  ],
+  "url": "http://www.spoken-tutorial.org/list_videos?view=1&foss=LibreOffice-Suite-Calc&language=English",
+  "verified": true
+ },
+ {
+  "id": "c07",
+  "title": "Fundamentals of Digital Marketing in Hindi (content from Google experts)",
+  "provider": "ASDC course portal",
+  "skills": [
+   "seo",
+   "social_media"
+  ],
+  "level": "beginner",
+  "hours": 8,
+  "cost_inr": 0,
+  "languages": [
+   "hi"
+  ],
+  "url": "https://courses.asdc.org.in/public/bundle/learn-the-fundamentals-of-digital-marketing-from-google-experts-and-grow-your-career",
+  "verified": true
+ },
+ {
+  "id": "c08",
+  "title": "JavaScript Algorithms and Data Structures (freeCodeCamp, archived)",
+  "provider": "freeCodeCamp",
+  "skills": [
+   "javascript"
+  ],
+  "level": "beginner",
+  "hours": 60,
+  "cost_inr": 0,
+  "languages": [
+   "en"
+  ],
+  "url": "https://learn.freecodecamp.org",
+  "verified": false
+ },
+ {
+  "id": "c09",
+  "title": "Front End Development Libraries (freeCodeCamp, archived: React)",
+  "provider": "freeCodeCamp",
+  "skills": [
+   "react"
+  ],
+  "level": "intermediate",
+  "hours": 50,
+  "cost_inr": 0,
+  "languages": [
+   "en"
+  ],
+  "url": "https://learn.freecodecamp.org",
+  "verified": false
+ },
+ {
+  "id": "c10",
+  "title": "Back End Development and APIs (freeCodeCamp, archived)",
+  "provider": "freeCodeCamp",
+  "skills": [
+   "rest_api"
+  ],
+  "level": "intermediate",
+  "hours": 50,
+  "cost_inr": 0,
+  "languages": [
+   "en"
+  ],
+  "url": "https://learn.freecodecamp.org",
+  "verified": false
+ },
+ {
+  "id": "c11",
+  "title": "Data Analysis with Python (freeCodeCamp, archived)",
+  "provider": "freeCodeCamp",
+  "skills": [
+   "python",
+   "statistics",
+   "data_viz"
+  ],
+  "level": "intermediate",
+  "hours": 60,
+  "cost_inr": 0,
+  "languages": [
+   "en"
+  ],
+  "url": "https://learn.freecodecamp.org",
+  "verified": false
+ },
+ {
+  "id": "c12",
+  "title": "Python tutorials in Hindi and English (Spoken Tutorial, IIT Bombay)",
+  "provider": "Spoken Tutorial, IIT Bombay",
+  "skills": [
+   "python"
+  ],
+  "level": "beginner",
+  "hours": 15,
+  "cost_inr": 0,
+  "languages": [
+   "en",
+   "hi"
+  ],
+  "url": "https://spoken-tutorial.org/",
+  "verified": false
+ },
+ {
+  "id": "c13",
+  "title": "Electrician Domestic Solutions (PMKVY job role, about 350 hours)",
+  "provider": "Skill India / PMKVY training centres",
+  "skills": [
+   "electrical_safety",
+   "wiring",
+   "multimeter"
+  ],
+  "level": "beginner",
+  "hours": 350,
+  "cost_inr": 0,
+  "languages": [
+   "en"
+  ],
+  "url": "https://www.skillindiadigital.gov.in/home",
+  "verified": false
+ },
+ {
+  "id": "c14",
+  "title": "Developing Soft Skills and Personality (8-week NPTEL course, IIT Kanpur)",
+  "provider": "NPTEL / SWAYAM",
+  "skills": [
+   "communication"
+  ],
+  "level": "beginner",
+  "hours": 12,
+  "cost_inr": 0,
+  "languages": [
+   "en"
+  ],
+  "url": "https://onlinecourses.nptel.ac.in/noc25_hs174/preview",
+  "verified": true
+ },
+ {
+  "id": "c15",
+  "title": "Content Marketing training (HubSpot Academy, about 9 hours)",
+  "provider": "HubSpot Academy",
+  "skills": [
+   "content_writing"
+  ],
+  "level": "beginner",
+  "hours": 9,
+  "cost_inr": 0,
+  "languages": [
+   "en"
+  ],
+  "url": "https://academy.hubspot.com/content-marketing-training",
+  "verified": true
+ },
+ {
+  "id": "c16",
+  "title": "Analytics Academy: Google Analytics 4 courses on Skillshop",
+  "provider": "Google",
+  "skills": [
+   "web_analytics"
+  ],
+  "level": "beginner",
+  "hours": 5,
+  "cost_inr": 0,
+  "languages": [
+   "en"
+  ],
+  "url": "https://support.google.com/analytics/answer/15440208?hl=en",
+  "verified": true
+ },
+ {
+  "id": "c17",
+  "title": "Operation of Three-Phase and Single-Phase Induction Motors incl. DOL starting (NPTEL content)",
+  "provider": "Ansys Innovation Space / NPTEL",
+  "skills": [
+   "motor_basics"
+  ],
+  "level": "intermediate",
+  "hours": 5,
+  "cost_inr": 0,
+  "languages": [
+   "en"
+  ],
+  "url": "https://innovationspace.ansys.com/product/operation-of-three-phase-induction-motor-and-introduction-to-single-phase-induction-motor",
+  "verified": true
+ },
+ {
+  "id": "c18",
+  "title": "Retail Sales Associate (In-Store Demonstrator) training",
+  "provider": "Tata STRIVE",
+  "skills": [
+   "customer_service",
+   "billing_pos"
+  ],
+  "level": "beginner",
+  "hours": 150,
+  "cost_inr": 0,
+  "languages": [
+   "en"
+  ],
+  "url": "https://tatastrive.com/cpt_courses/retail-sales-associate-in-store-demonstrator/",
+  "verified": true
+ },
+ {
+  "id": "c19",
+  "title": "GST Workshop: GST basics and Tally (20 hours, online)",
+  "provider": "Navjyoti India Foundation",
+  "skills": [
+   "billing_pos",
+   "basic_math"
+  ],
+  "level": "beginner",
+  "hours": 20,
+  "cost_inr": 0,
+  "languages": [
+   "en",
+   "hi"
+  ],
+  "url": "https://navjyoti.org.in/gst-workshop/",
+  "verified": true
+ },
+ {
+  "id": "c20",
+  "title": "Management of Inventory Systems (12-week NPTEL course, IIT Kharagpur)",
+  "provider": "NPTEL / SWAYAM",
+  "skills": [
+   "inventory"
+  ],
+  "level": "intermediate",
+  "hours": 30,
+  "cost_inr": 0,
+  "languages": [
+   "en"
+  ],
+  "url": "https://onlinecourses.nptel.ac.in/noc25_mg42/preview",
+  "verified": true
+ },
+ {
+  "id": "c21",
+  "title": "Basic arithmetic and percentages (Khan Academy)",
+  "provider": "Khan Academy",
+  "skills": [
+   "basic_math"
+  ],
+  "level": "beginner",
+  "hours": 20,
+  "cost_inr": 0,
+  "languages": [
+   "en"
+  ],
+  "url": "https://www.khanacademy.org",
+  "verified": false
+ }
+]

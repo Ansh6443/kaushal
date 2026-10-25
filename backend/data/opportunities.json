@@ -1,0 +1,154 @@
+[
+ {
+  "id": "o01",
+  "title": "Browse data and analytics internships (PM Internship Scheme portal)",
+  "type": "internship",
+  "role_id": "data_analyst",
+  "skills": [
+   "excel",
+   "sql",
+   "python"
+  ],
+  "location": "India (filter by your city or state on the portal)",
+  "source": "PM Internship Scheme (official portal)",
+  "url": "https://pminternship.mca.gov.in/",
+  "sample": false
+ },
+ {
+  "id": "o02",
+  "title": "Search Data Analyst jobs (National Career Service)",
+  "type": "job",
+  "role_id": "data_analyst",
+  "skills": [
+   "excel",
+   "sql",
+   "statistics"
+  ],
+  "location": "India (filter by your city or state on the portal)",
+  "source": "National Career Service (official portal)",
+  "url": "https://www.ncs.gov.in",
+  "sample": false
+ },
+ {
+  "id": "o03",
+  "title": "Browse web and IT internships (PM Internship Scheme portal)",
+  "type": "internship",
+  "role_id": "web_developer",
+  "skills": [
+   "html_css",
+   "javascript",
+   "git"
+  ],
+  "location": "India (filter by your city or state on the portal)",
+  "source": "PM Internship Scheme (official portal)",
+  "url": "https://pminternship.mca.gov.in/",
+  "sample": false
+ },
+ {
+  "id": "o04",
+  "title": "Search Web Developer jobs (National Career Service)",
+  "type": "job",
+  "role_id": "web_developer",
+  "skills": [
+   "html_css",
+   "javascript",
+   "rest_api",
+   "git"
+  ],
+  "location": "India (filter by your city or state on the portal)",
+  "source": "National Career Service (official portal)",
+  "url": "https://www.ncs.gov.in",
+  "sample": false
+ },
+ {
+  "id": "o05",
+  "title": "Browse marketing internships (PM Internship Scheme portal)",
+  "type": "internship",
+  "role_id": "digital_marketer",
+  "skills": [
+   "seo",
+   "social_media",
+   "content_writing"
+  ],
+  "location": "India (filter by your city or state on the portal)",
+  "source": "PM Internship Scheme (official portal)",
+  "url": "https://pminternship.mca.gov.in/",
+  "sample": false
+ },
+ {
+  "id": "o06",
+  "title": "Search Digital Marketing jobs (National Career Service)",
+  "type": "job",
+  "role_id": "digital_marketer",
+  "skills": [
+   "seo",
+   "social_media",
+   "web_analytics"
+  ],
+  "location": "India (filter by your city or state on the portal)",
+  "source": "National Career Service (official portal)",
+  "url": "https://www.ncs.gov.in",
+  "sample": false
+ },
+ {
+  "id": "o07",
+  "title": "Electrician apprenticeships (NAPS, Ministry of Skill Development)",
+  "type": "apprenticeship",
+  "role_id": "electrician",
+  "skills": [
+   "electrical_safety",
+   "circuit_reading",
+   "wiring"
+  ],
+  "location": "India (filter by your city or state on the portal)",
+  "source": "NAPS (MSDE)",
+  "url": "https://www.msde.gov.in/en/schemes-initiatives/apprenticeship-training/naps",
+  "sample": false
+ },
+ {
+  "id": "o08",
+  "title": "Search Electrician and technician jobs (National Career Service)",
+  "type": "job",
+  "role_id": "electrician",
+  "skills": [
+   "wiring",
+   "multimeter",
+   "motor_basics",
+   "electrical_safety"
+  ],
+  "location": "India (filter by your city or state on the portal)",
+  "source": "National Career Service (official portal)",
+  "url": "https://www.ncs.gov.in",
+  "sample": false
+ },
+ {
+  "id": "o09",
+  "title": "Search Retail Sales Associate jobs (National Career Service)",
+  "type": "job",
+  "role_id": "retail_associate",
+  "skills": [
+   "customer_service",
+   "billing_pos",
+   "inventory"
+  ],
+  "location": "India (filter by your city or state on the portal)",
+  "source": "National Career Service (official portal)",
+  "url": "https://www.ncs.gov.in",
+  "sample": false
+ },
+ {
+  "id": "o10",
+  "title": "Retail and store operations apprenticeships (NAPS, Ministry of Skill Development)",
+  "type": "apprenticeship",
+  "role_id": "retail_associate",
+  "skills": [
+   "inventory",
+   "billing_pos",
+   "basic_math"
+  ],
+  "location": "India (filter by your city or state on the portal)",
+  "source": "NAPS (MSDE)",
+  "url": "https://www.msde.gov.in/en/schemes-initiatives/apprenticeship-training/naps",
+  "sample": false
+ }
+]
