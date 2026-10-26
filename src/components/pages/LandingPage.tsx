@@ -127,10 +127,10 @@ export const LandingPage: React.FC<LandingPageProps> = ({ lang, onNavigate }) =>
           {/* Dual Action Buttons: Luminous Royal Blue + Crisp Outlined White */}
           <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 pt-1">
             <button
-              onClick={() => onNavigate('assessment')}
+              onClick={() => onNavigate('resume')}
               className="h-11 px-6 rounded-lg bg-blue-600 hover:bg-blue-700 active:bg-blue-800 text-white font-bold text-sm tracking-tight transition-all shadow-md shadow-blue-600/20 hover:shadow-lg hover:shadow-blue-600/30 flex items-center justify-center gap-2 active:scale-[0.99] whitespace-nowrap shrink-0"
             >
-              <span>{lang === 'en' ? 'Start 3-Minute Skill Assessment' : '३ मिनट का कौशल परीक्षण दें'}</span>
+              <span>{lang === 'en' ? 'Build AI Resume & Send to HR' : 'एआई रेज़्यूमे बनाएं व एचआर को भेजें'}</span>
               <ArrowRight className="w-4 h-4" />
             </button>
 

@@ -1,19 +1,24 @@
 import React, { useState } from 'react';
-import { Language } from '../types';
+import { Language, UserProfile } from '../types';
 import { 
   Download, 
   Menu, 
   X, 
   LayoutDashboard, 
   Home, 
-  UserCheck, 
   LogIn, 
   HelpCircle, 
   FileSpreadsheet, 
   BookOpen, 
   Briefcase, 
   Info, 
-  Palette
+  Palette,
+  FileText,
+  User,
+  LogOut,
+  ChevronDown,
+  Bookmark,
+  CheckCircle2
 } from 'lucide-react';
 
 interface HeaderProps {
@@ -22,6 +27,9 @@ interface HeaderProps {
   lang: Language;
   setLang: (lang: Language) => void;
   onOpenPdfExport: () => void;
+  userProfile: UserProfile | null;
+  onSignOut?: () => void;
+  savedJobsCount?: number;
 }
 
 export const Header: React.FC<HeaderProps> = ({
@@ -30,31 +38,43 @@ export const Header: React.FC<HeaderProps> = ({
   lang,
   setLang,
   onOpenPdfExport,
+  userProfile,
+  onSignOut,
+  savedJobsCount = 0,
 }) => {
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
+  const [isProfileDropdownOpen, setIsProfileDropdownOpen] = useState<boolean>(false);
+
+  const navTabs = [
+    { id: 'landing', labelEn: 'Home', labelHi: 'होम' },
+    { id: 'resume', labelEn: 'AI Resume Studio', labelHi: 'एआई रेज़्यूमे' },
+    { id: 'assessment', labelEn: 'Skill Diagnostic', labelHi: 'कौशल परीक्षा' },
+    { id: 'gap-report', labelEn: 'Gap Report', labelHi: 'अंतर रिपोर्ट' },
+    { id: 'jobs', labelEn: 'Jobs & HR Connect', labelHi: 'नौकरियां व HR' },
+    { id: 'courses', labelEn: 'Free Courses', labelHi: 'सरकारी कोर्स' },
+    { id: 'dashboard', labelEn: 'My Dashboard', labelHi: 'डैशबोर्ड' },
+  ];
 
   const sitemapPages = [
-    { id: 'landing', labelEn: '1. Landing / Home', labelHi: '१. मुख्य पृष्ठ', icon: Home },
-    { id: 'onboarding', labelEn: '2. Onboarding (Language & Role)', labelHi: '२. भाषा व प्रोफाइल चयन', icon: UserCheck },
-    { id: 'auth', labelEn: '3. Sign Up / Log In', labelHi: '३. साइन अप / लॉगिन', icon: LogIn },
-    { id: 'assessment', labelEn: '4. Skill Assessment (Diagnostic)', labelHi: '४. कौशल परीक्षा', icon: HelpCircle },
-    { id: 'gap-report', labelEn: '5. Skill Gap Report (Results)', labelHi: '५. कौशल अंतर रिपोर्ट', icon: FileSpreadsheet },
-    { id: 'courses', labelEn: '6. Course Recommendations (6a Detail)', labelHi: '६. अनुशंसित कोर्स', icon: BookOpen },
-    { id: 'jobs', labelEn: '7. Job & Apprenticeship Listings (7a Detail)', labelHi: '७. स्थानीय नौकरियां', icon: Briefcase },
-    { id: 'dashboard', labelEn: '8. Profile / Dashboard', labelHi: '८. उम्मीदवार डैशबोर्ड', icon: LayoutDashboard },
-    { id: 'about', labelEn: '9. About / Impact', labelHi: '९. सामाजिक प्रभाव', icon: Info },
-    { id: 'specs', labelEn: 'Design Tokens & Research', labelHi: 'डिजाइन सिस्टम व शोध', icon: Palette },
+    { id: 'landing', labelEn: 'Home', labelHi: 'मुख्य पृष्ठ', icon: Home },
+    { id: 'resume', labelEn: 'AI Resume Studio', labelHi: 'एआई रेज़्यूमे', icon: FileText },
+    { id: 'assessment', labelEn: 'Skill Diagnostic', labelHi: 'कौशल परीक्षा', icon: HelpCircle },
+    { id: 'gap-report', labelEn: 'Skill Gap Report', labelHi: 'कौशल अंतर रिपोर्ट', icon: FileSpreadsheet },
+    { id: 'jobs', labelEn: 'Local Jobs & HR Connect', labelHi: 'स्थानीय नौकरियां व HR', icon: Briefcase },
+    { id: 'courses', labelEn: 'Free Certified Courses', labelHi: 'निःशुल्क कोर्स', icon: BookOpen },
+    { id: 'dashboard', labelEn: 'Candidate Dashboard', labelHi: 'उम्मीदवार डैशबोर्ड', icon: LayoutDashboard },
+    { id: 'about', labelEn: 'Social Impact & Mission', labelHi: 'सामाजिक प्रभाव', icon: Info },
   ];
 
   return (
     <header className="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200/80 px-4 lg:px-8 py-2.5 transition-colors no-print shadow-[0_1px_2px_rgba(0,0,0,0.03)]">
       <div className="max-w-7xl mx-auto flex items-center justify-between gap-4">
         
-        {/* Left: Authoritative Brand Lockup with Subtitle & Live Indicator */}
+        {/* Left: Brand Lockup */}
         <div className="flex items-center gap-3 shrink-0">
           <button
             onClick={() => onNavigate('landing')}
-            className="flex items-center gap-2.5 text-left group focus:outline-none"
+            className="flex items-center gap-2.5 text-left group focus:outline-none cursor-pointer"
           >
             <div className="w-8 h-8 rounded-lg bg-blue-600 flex items-center justify-center text-white font-bold text-xs shadow-sm shadow-blue-500/25 group-hover:bg-blue-700 transition-colors shrink-0">
               KS
@@ -64,35 +84,27 @@ export const Header: React.FC<HeaderProps> = ({
                 {lang === 'en' ? 'KAUSHAL SETU' : 'कौशल सेतु'}
               </span>
               <span className="text-[10.5px] text-slate-500 font-medium tracking-tight hidden sm:block leading-none mt-0.5">
-                {lang === 'en' ? 'UP Youth Skills & Trade Bridge' : 'उत्तर प्रदेश कौशल एवं रोजगार सेतु'}
+                {lang === 'en' ? 'Skills, Resume & Direct HR Pipeline' : 'कौशल, रेज़्यूमे एवं सीधा एचआर प्रेषण'}
               </span>
             </div>
           </button>
 
           {/* Live Industrial Activity Micro-Badge */}
-          <div className="hidden lg:flex items-center gap-1.5 pl-3 border-l border-slate-200 text-[11px] font-medium text-slate-500">
+          <div className="hidden xl:flex items-center gap-1.5 pl-3 border-l border-slate-200 text-[11px] font-medium text-slate-500">
             <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
-            <span>{lang === 'en' ? 'Live Hiring Feeds' : 'सक्रिय औद्योगिक मानक'}</span>
+            <span>{lang === 'en' ? '140+ UP Employers Active' : '१४०+ नियोक्ता सक्रिय'}</span>
           </div>
         </div>
 
-        {/* Center: Balanced Primary Navigation (Grounded Segmented Control) */}
-        <nav className="hidden md:flex items-center gap-1 bg-slate-100/90 p-1 rounded-xl border border-slate-200/80 text-xs shadow-2xs">
-          {[
-            { id: 'landing', labelEn: 'Home', labelHi: 'होम' },
-            { id: 'assessment', labelEn: 'Assessment', labelHi: 'परीक्षा' },
-            { id: 'gap-report', labelEn: 'Gap Report', labelHi: 'अंतर रिपोर्ट' },
-            { id: 'courses', labelEn: 'Courses', labelHi: 'कोर्स' },
-            { id: 'jobs', labelEn: 'Jobs', labelHi: 'नौकरियां' },
-            { id: 'dashboard', labelEn: 'Dashboard', labelHi: 'डैशबोर्ड' },
-            { id: 'about', labelEn: 'Impact', labelHi: 'प्रभाव' },
-          ].map(tab => {
+        {/* Center: Primary Navigation */}
+        <nav className="hidden lg:flex items-center gap-1 bg-slate-100/90 p-1 rounded-xl border border-slate-200/80 text-xs shadow-2xs">
+          {navTabs.map(tab => {
             const isActive = currentPage === tab.id;
             return (
               <button
                 key={tab.id}
                 onClick={() => onNavigate(tab.id)}
-                className={`px-3 py-1.5 rounded-lg font-medium whitespace-nowrap transition-all ${
+                className={`px-3 py-1.5 rounded-lg font-medium whitespace-nowrap transition-all cursor-pointer ${
                   isActive
                     ? 'bg-white text-blue-700 font-bold shadow-xs border border-blue-100/80'
                     : 'text-slate-600 hover:text-slate-900 hover:bg-white/60'
@@ -104,14 +116,114 @@ export const Header: React.FC<HeaderProps> = ({
           })}
         </nav>
 
-        {/* Right: Actions Cluster (Language Switcher + PDF Export + Mobile Menu) */}
-        <div className="flex items-center gap-2.5 shrink-0">
+        {/* Right: User Login & Profile + Language + PDF */}
+        <div className="flex items-center gap-2 shrink-0">
           
-          {/* Language Selector (Bilingual Toggle) */}
+          {/* User Sign In / Profile Menu */}
+          {userProfile ? (
+            <div className="relative">
+              <button
+                onClick={() => setIsProfileDropdownOpen(!isProfileDropdownOpen)}
+                className="flex items-center gap-2 bg-slate-100 hover:bg-slate-200/80 border border-slate-200/90 rounded-xl px-2.5 py-1.5 text-xs font-semibold text-slate-800 transition-colors cursor-pointer"
+              >
+                <div className="w-6 h-6 rounded-full bg-blue-600 text-white flex items-center justify-center text-[11px] font-bold">
+                  {userProfile.name.charAt(0)}
+                </div>
+                <div className="text-left hidden sm:block max-w-[110px] truncate">
+                  <div className="leading-tight truncate">{userProfile.name}</div>
+                  <div className="text-[10px] text-slate-500 font-normal truncate">{userProfile.targetRole}</div>
+                </div>
+                <ChevronDown className="w-3.5 h-3.5 text-slate-500" />
+              </button>
+
+              {/* Profile Dropdown */}
+              {isProfileDropdownOpen && (
+                <div className="absolute right-0 mt-1.5 w-56 bg-white rounded-xl shadow-xl border border-slate-200 py-1.5 z-50 text-xs animate-in fade-in zoom-in-95 duration-100">
+                  <div className="px-3.5 py-2 border-b border-slate-100">
+                    <div className="font-bold text-slate-900">{userProfile.name}</div>
+                    <div className="text-[11px] text-slate-500">{userProfile.email || userProfile.phone}</div>
+                    <div className="mt-1 flex items-center gap-1.5 text-[10.5px] font-mono-data text-emerald-700 font-semibold bg-emerald-50 px-2 py-0.5 rounded">
+                      <CheckCircle2 className="w-3 h-3 text-emerald-600" />
+                      <span>ATS Score: {userProfile.atsScore}%</span>
+                    </div>
+                  </div>
+
+                  <button
+                    onClick={() => {
+                      setIsProfileDropdownOpen(false);
+                      onNavigate('dashboard');
+                    }}
+                    className="w-full px-3.5 py-2 text-left text-slate-700 hover:bg-slate-50 flex items-center gap-2 cursor-pointer"
+                  >
+                    <LayoutDashboard className="w-3.5 h-3.5 text-slate-500" />
+                    <span>{lang === 'en' ? 'My Dashboard' : 'मेरा डैशबोर्ड'}</span>
+                  </button>
+
+                  <button
+                    onClick={() => {
+                      setIsProfileDropdownOpen(false);
+                      onNavigate('resume');
+                    }}
+                    className="w-full px-3.5 py-2 text-left text-slate-700 hover:bg-slate-50 flex items-center gap-2 cursor-pointer"
+                  >
+                    <FileText className="w-3.5 h-3.5 text-slate-500" />
+                    <span>{lang === 'en' ? 'Edit AI Resume' : 'रेज़्यूमे एडिट करें'}</span>
+                  </button>
+
+                  <button
+                    onClick={() => {
+                      setIsProfileDropdownOpen(false);
+                      onNavigate('jobs');
+                    }}
+                    className="w-full px-3.5 py-2 text-left text-slate-700 hover:bg-slate-50 flex items-center gap-2 cursor-pointer"
+                  >
+                    <Briefcase className="w-3.5 h-3.5 text-slate-500" />
+                    <span>{lang === 'en' ? 'My Applications' : 'मेरे आवेदन'}</span>
+                  </button>
+
+                  <div className="border-t border-slate-100 my-1"></div>
+
+                  <button
+                    onClick={() => {
+                      setIsProfileDropdownOpen(false);
+                      onNavigate('auth');
+                    }}
+                    className="w-full px-3.5 py-2 text-left text-slate-700 hover:bg-slate-50 flex items-center gap-2 cursor-pointer"
+                  >
+                    <User className="w-3.5 h-3.5 text-slate-500" />
+                    <span>{lang === 'en' ? 'Switch User Account' : 'खाता बदलें'}</span>
+                  </button>
+
+                  {onSignOut && (
+                    <button
+                      onClick={() => {
+                        setIsProfileDropdownOpen(false);
+                        onSignOut();
+                      }}
+                      className="w-full px-3.5 py-2 text-left text-rose-600 hover:bg-rose-50 flex items-center gap-2 cursor-pointer font-medium"
+                    >
+                      <LogOut className="w-3.5 h-3.5 text-rose-500" />
+                      <span>{lang === 'en' ? 'Sign Out' : 'लॉग आउट'}</span>
+                    </button>
+                  )}
+                </div>
+              )}
+            </div>
+          ) : (
+            <button
+              onClick={() => onNavigate('auth')}
+              className="flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-semibold text-xs shadow-xs transition-all cursor-pointer"
+            >
+              <LogIn className="w-3.5 h-3.5" />
+              <span>{lang === 'en' ? 'Sign In / Register' : 'लॉगिन / साइन अप'}</span>
+            </button>
+          )}
+
+          {/* Language Selector */}
           <div className="flex items-center bg-slate-100 rounded-lg border border-slate-200 p-0.5 text-xs">
             <button
               onClick={() => setLang('en')}
-              className={`px-2.5 py-1 rounded-md font-mono-data text-xs transition-colors ${
+              className={`px-2 py-1 rounded-md font-mono-data text-xs transition-colors cursor-pointer ${
                 lang === 'en'
                   ? 'bg-white text-blue-700 font-bold shadow-xs'
                   : 'text-slate-500 hover:text-slate-900'
@@ -121,7 +233,7 @@ export const Header: React.FC<HeaderProps> = ({
             </button>
             <button
               onClick={() => setLang('hi')}
-              className={`px-2.5 py-1 rounded-md font-hindi text-xs transition-colors ${
+              className={`px-2 py-1 rounded-md font-hindi text-xs transition-colors cursor-pointer ${
                 lang === 'hi'
                   ? 'bg-white text-blue-700 font-bold shadow-xs'
                   : 'text-slate-500 hover:text-slate-900'
@@ -131,19 +243,19 @@ export const Header: React.FC<HeaderProps> = ({
             </button>
           </div>
 
-          {/* Download PDF Button: Vibrant Royal Blue */}
+          {/* Download PDF Button */}
           <button
             onClick={onOpenPdfExport}
-            className="flex items-center gap-1.5 px-3.5 py-1.5 text-xs font-semibold rounded-lg bg-blue-600 text-white hover:bg-blue-700 active:scale-[0.98] transition-all shadow-xs whitespace-nowrap shrink-0"
+            className="hidden sm:flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-800 transition-all shadow-xs whitespace-nowrap cursor-pointer"
           >
             <Download className="w-3.5 h-3.5" />
-            <span>{lang === 'en' ? 'PDF Report' : 'पीडीएफ रिपोर्ट'}</span>
+            <span>{lang === 'en' ? 'PDF' : 'पीडीएफ'}</span>
           </button>
 
           {/* Mobile Menu Trigger */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="md:hidden p-2 text-slate-600 hover:text-slate-900 rounded-lg bg-slate-100 border border-slate-200"
+            className="lg:hidden p-2 text-slate-600 hover:text-slate-900 rounded-lg bg-slate-100 border border-slate-200 cursor-pointer"
             aria-label="Toggle navigation menu"
           >
             {isMenuOpen ? <X className="w-4 h-4" /> : <Menu className="w-4 h-4" />}
@@ -154,11 +266,11 @@ export const Header: React.FC<HeaderProps> = ({
 
       {/* Mobile Menu Drawer */}
       {isMenuOpen && (
-        <div className="md:hidden pt-3 mt-3 border-t border-slate-200 space-y-1">
+        <div className="lg:hidden pt-3 mt-3 border-t border-slate-200 space-y-1">
           <div className="text-[10px] font-mono-data text-slate-400 px-2 py-1">
-            ALL 11 SCREENS DIRECTORY
+            NAVIGATION DIRECTORY
           </div>
-          <div className="grid grid-cols-2 gap-1">
+          <div className="grid grid-cols-2 gap-1.5">
             {sitemapPages.map(page => {
               const Icon = page.icon;
               const isCurrent = currentPage === page.id;
@@ -169,8 +281,8 @@ export const Header: React.FC<HeaderProps> = ({
                     onNavigate(page.id);
                     setIsMenuOpen(false);
                   }}
-                  className={`p-2 rounded-lg text-left text-xs flex items-center gap-2 transition-colors ${
-                    isCurrent ? 'bg-blue-50 text-blue-700 font-semibold' : 'text-slate-700 hover:bg-slate-100'
+                  className={`p-2.5 rounded-lg text-left text-xs flex items-center gap-2 transition-colors cursor-pointer ${
+                    isCurrent ? 'bg-blue-50 text-blue-700 font-bold' : 'text-slate-700 hover:bg-slate-100'
                   }`}
                 >
                   <Icon className="w-3.5 h-3.5 text-slate-500" />

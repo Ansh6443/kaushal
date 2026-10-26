@@ -95,3 +95,44 @@ export interface IconEmojiSpec {
   comprehensionRate: string;
   avoidCliché: string;
 }
+
+
+export interface UserProfile {
+  name: string;
+  phone: string;
+  email?: string;
+  location: string;
+  targetRole: string;
+  education: string;
+  experienceYears: number;
+  skills: string[];
+  bio: string;
+  resumeBuilt: boolean;
+  atsScore: number;
+  avatarUrl?: string;
+}
+
+export interface HrDispatchRecord {
+  id: string;
+  companyName: string;
+  roleTitle: string;
+  hrName: string;
+  hrRole: string;
+  location: string;
+  appliedDate: string;
+  matchScore: number;
+  status: 'Dispatched to HR' | 'HR Reviewing' | 'Interview Scheduled' | 'Shortlisted';
+  statusHi: 'एचआर को भेजा गया' | 'एचआर समीक्षाधीन' | 'साक्षात्कार तय' | 'शॉर्टलिस्टेड';
+  channel: 'Direct Portal Push' | 'Verified WhatsApp Link' | 'NATS Apprenticeship API';
+}
+
+export interface JuryQaItem {
+  id: string;
+  pillar: '1-Social Impact' | '2-Presentation' | '3-Unique Idea' | '4-Feasibility' | '5-Prototype' | '6-Q&A Defense';
+  pillarHi: '१-सामाजिक प्रभाव' | '२-प्रस्तुति' | '३-विशिष्ट विचार' | '४-व्यावहारिकता' | '५-प्रोटोटाइप' | '६-प्रश्न-उत्तर';
+  question: string;
+  questionHi: string;
+  answer: string;
+  answerHi: string;
+  metric: string;
+}
