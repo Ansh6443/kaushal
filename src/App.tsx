@@ -15,6 +15,7 @@ import { ResumeBuilderPage } from './components/pages/ResumeBuilderPage';
 import { AssessmentPage } from './components/pages/AssessmentPage';
 import { GapReportPage } from './components/pages/GapReportPage';
 import { CoursesPage } from './components/pages/CoursesPage';
+import { EscrowPayoutsPage } from './components/pages/EscrowPayoutsPage';
 import { JobsPage } from './components/pages/JobsPage';
 import { DashboardPage } from './components/pages/DashboardPage';
 import { AboutImpactPage } from './components/pages/AboutImpactPage';
@@ -227,11 +228,23 @@ export default function App() {
             />
           )}
 
-          {/* 7. Course Recommendations */}
+          {/* 7. Course Recommendations & Agentic PayPal Checkout */}
           {currentPage === 'courses' && (
             <CoursesPage
               lang={lang}
               selectedPersonaId={selectedPersonaId}
+              userProfile={userProfile}
+              onUpdateProfile={handleUpdateProfile}
+              onNavigate={handleNavigate}
+            />
+          )}
+
+          {/* 7b. Autonomous AI Escrow & PayPal Milestone Payouts */}
+          {currentPage === 'payouts' && (
+            <EscrowPayoutsPage
+              lang={lang}
+              selectedPersonaId={selectedPersonaId}
+              userProfile={userProfile}
               onNavigate={handleNavigate}
             />
           )}

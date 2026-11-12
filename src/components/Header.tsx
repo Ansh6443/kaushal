@@ -18,7 +18,8 @@ import {
   LogOut,
   ChevronDown,
   Bookmark,
-  CheckCircle2
+  CheckCircle2,
+  Zap
 } from 'lucide-react';
 
 interface HeaderProps {
@@ -51,7 +52,8 @@ export const Header: React.FC<HeaderProps> = ({
     { id: 'assessment', labelEn: 'Skill Diagnostic', labelHi: 'कौशल परीक्षा' },
     { id: 'gap-report', labelEn: 'Gap Report', labelHi: 'अंतर रिपोर्ट' },
     { id: 'jobs', labelEn: 'Jobs & HR Connect', labelHi: 'नौकरियां व HR' },
-    { id: 'courses', labelEn: 'Free Courses', labelHi: 'सरकारी कोर्स' },
+    { id: 'courses', labelEn: 'Academy & Courses', labelHi: 'कोर्स व प्रमाणन' },
+    { id: 'payouts', labelEn: 'AI Escrow Payouts', labelHi: 'एआई एस्क्रो भुगतान' },
     { id: 'dashboard', labelEn: 'My Dashboard', labelHi: 'डैशबोर्ड' },
   ];
 
@@ -61,7 +63,8 @@ export const Header: React.FC<HeaderProps> = ({
     { id: 'assessment', labelEn: 'Skill Diagnostic', labelHi: 'कौशल परीक्षा', icon: HelpCircle },
     { id: 'gap-report', labelEn: 'Skill Gap Report', labelHi: 'कौशल अंतर रिपोर्ट', icon: FileSpreadsheet },
     { id: 'jobs', labelEn: 'Local Jobs & HR Connect', labelHi: 'स्थानीय नौकरियां व HR', icon: Briefcase },
-    { id: 'courses', labelEn: 'Free Certified Courses', labelHi: 'निःशुल्क कोर्स', icon: BookOpen },
+    { id: 'courses', labelEn: 'Academy & Certifications', labelHi: 'प्रमाणित कोर्स व चेकआउट', icon: BookOpen },
+    { id: 'payouts', labelEn: 'AI Escrow Milestone Payouts', labelHi: 'एआई एस्क्रो भुगतान', icon: Zap },
     { id: 'dashboard', labelEn: 'Candidate Dashboard', labelHi: 'उम्मीदवार डैशबोर्ड', icon: LayoutDashboard },
     { id: 'about', labelEn: 'Social Impact & Mission', labelHi: 'सामाजिक प्रभाव', icon: Info },
   ];

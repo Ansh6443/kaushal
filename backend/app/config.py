@@ -9,10 +9,15 @@ DATABASE_URL = os.getenv("DATABASE_URL", "")
 
 # LLM providers (all optional: the system falls back to rule-based logic)
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "")
-GEMINI_MODEL = os.getenv("GEMINI_MODEL", "gemini-3.8-flash")
+GEMINI_MODEL = os.getenv("GEMINI_MODEL", "gemini-2.0-flash")
 ANTHROPIC_API_KEY = os.getenv("ANTHROPIC_API_KEY", "")
 ANTHROPIC_MODEL = os.getenv("ANTHROPIC_MODEL", "claude-sonnet-5-5")
 LLM_TIMEOUT = float(os.getenv("LLM_TIMEOUT", "20"))
+
+# PayPal API Credentials & Configuration
+PAYPAL_CLIENT_ID = os.getenv("PAYPAL_CLIENT_ID", "")
+PAYPAL_CLIENT_SECRET = os.getenv("PAYPAL_CLIENT_SECRET", "")
+PAYPAL_MODE = os.getenv("PAYPAL_MODE", "sandbox")
 
 # Live job data (optional)
 ADZUNA_APP_ID = os.getenv("ADZUNA_APP_ID", "")

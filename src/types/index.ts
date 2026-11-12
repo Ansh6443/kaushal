@@ -110,6 +110,8 @@ export interface UserProfile {
   resumeBuilt: boolean;
   atsScore: number;
   avatarUrl?: string;
+  unlockedCourses?: string[];
+  paypalEmail?: string;
 }
 
 export interface HrDispatchRecord {
@@ -135,4 +137,67 @@ export interface JuryQaItem {
   answer: string;
   answerHi: string;
   metric: string;
+}
+
+
+export interface GigMilestone {
+  id: string;
+  title: string;
+  titleHi?: string;
+  employer: string;
+  category: string;
+  stipendUsd: number;
+  stipendInr: number;
+  description: string;
+  descriptionHi?: string;
+  requirements: string[];
+  defaultReceiver: string;
+}
+
+export interface AiMilestoneEvaluation {
+  score: number;
+  approved: boolean;
+  feedback: string;
+  completeness_pct: number;
+  technical_accuracy_pct: number;
+  practical_feasibility_pct: number;
+}
+
+export interface PaypalPayoutReceipt {
+  status: string;
+  payout_mode: string;
+  batch_header?: {
+    payout_batch_id: string;
+    batch_status: string;
+    sender_batch_id: string;
+    amount?: {
+      value: string;
+      currency: string;
+    };
+  };
+  item?: {
+    payout_item_id: string;
+    transaction_status: string;
+    receiver: string;
+    amount: {
+      value: string;
+      currency: string;
+    };
+    note: string;
+  };
+  timestamp: string;
+  message?: string;
+  error?: string;
+}
+
+export interface AgenticCourseOrder {
+  id: string;
+  courseTitle: string;
+  originalPrice: number;
+  discountPercent: number;
+  finalPrice: number;
+  status: string;
+  orderMode: string;
+  timestamp: string;
+  captureId?: string;
 }
