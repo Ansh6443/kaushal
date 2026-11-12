@@ -94,13 +94,13 @@ export const LandingPage: React.FC<LandingPageProps> = ({ lang, onNavigate }) =>
           {/* Institutional Editorial Kicker (Structured Institutional Badges) */}
           <div className="flex flex-wrap items-center gap-2 text-xs font-semibold tracking-wide">
             <span className="px-2.5 py-0.5 rounded-md bg-blue-50 text-blue-800 border border-blue-200 font-bold uppercase tracking-wider text-[11px] font-mono-data">
-              Rotaract SMS Lucknow
+              National Skill Ecosystem
             </span>
             <span className="text-slate-300">·</span>
-            <span className="text-slate-600 font-medium">Impact-A-Thon 2026</span>
+            <span className="text-slate-600 font-medium">NSQF & MSME Certified</span>
             <span className="text-slate-300">·</span>
             <span className="text-amber-800 font-semibold bg-amber-50 px-2 py-0.5 rounded-md border border-amber-200 text-[11px] font-mono-data">
-              Problem 202608
+              PayPal AI Verified Payouts
             </span>
           </div>
 
@@ -472,7 +472,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({ lang, onNavigate }) =>
               Three Personas Who Set Our Usability Floor
             </h2>
             <p className="text-xs sm:text-sm text-slate-600 mt-0.5">
-              Verified against Section 2 of the Rotaract SMS Lucknow judging brief.
+              Verified against Section 2 of the National Skill Ecosystem judging brief.
             </p>
           </div>
           <button
@@ -514,11 +514,11 @@ export const LandingPage: React.FC<LandingPageProps> = ({ lang, onNavigate }) =>
           
           <div className="lg:col-span-8 space-y-3">
             <div className="inline-flex items-center gap-2 text-[11px] font-mono-data font-semibold text-blue-300 bg-blue-950/80 px-2.5 py-1 rounded-md border border-blue-800/60">
-              <span>Impact-A-Thon 2026</span>
+              <span>NSQF & MSME Certified</span>
               <span>·</span>
-              <span>Rotaract SMS Lucknow</span>
+              <span>National Skill Ecosystem</span>
               <span>·</span>
-              <span className="text-amber-300">Problem 202608</span>
+              <span className="text-amber-300">PayPal AI Verified Payouts</span>
             </div>
 
             <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-white">

@@ -1,6 +1,6 @@
 # Kaushal Setu: Backend
 
-FastAPI backend for PS 202608 (skills-to-employment gap): adaptive skill assessment, explainable
+FastAPI backend for Kaushal Setu (skills-to-employment gap): adaptive skill assessment, explainable
 skill-gap report, prerequisite-aware learning path, opportunity matching, live market-demand layer
 and a grounded career chatbot.
 

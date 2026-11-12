@@ -14,9 +14,9 @@ export const AboutImpactPage: React.FC<AboutImpactPageProps> = ({ lang, onNaviga
       {/* Top Banner (Judge-Facing Mission Statement) */}
       <div className="bg-white rounded-2xl border border-slate-200/90 p-6 sm:p-8 space-y-4 shadow-sm">
         <div className="inline-flex items-center gap-2 text-xs font-mono-data text-blue-700 font-semibold">
-          <span>ROTARACT CLUB OF SMS LUCKNOW · IMPACT-A-THON 2026</span>
+          <span>SKILLS-TO-EMPLOYMENT & AGENTIC COMMERCE MISSION</span>
           <span>·</span>
-          <span className="text-emerald-700 font-bold">PROBLEM 202608</span>
+          <span className="text-emerald-700 font-bold">ENTERPRISE SPECIFICATION 2026</span>
         </div>
 
         <h1 className="text-2xl sm:text-3xl font-display font-bold text-slate-900">
@@ -30,7 +30,7 @@ export const AboutImpactPage: React.FC<AboutImpactPageProps> = ({ lang, onNaviga
         </p>
 
         <div className="pt-2 flex flex-wrap gap-4 text-xs font-mono-data text-slate-500">
-          <span>MPH Hall Presentation: <strong className="text-slate-800">5-min Pitch + 2-min Q&A</strong></span>
+          <span>Core Technology: <strong className="text-slate-800">Autonomous AI & PayPal Payouts API</strong></span>
           <span>·</span>
           <span>Target Reach: <strong className="text-blue-700">UP Industrial Corridor & Rural Bharat</strong></span>
         </div>
@@ -114,7 +114,7 @@ export const AboutImpactPage: React.FC<AboutImpactPageProps> = ({ lang, onNaviga
         </div>
 
         <div className="pt-4 flex items-center justify-between border-t border-slate-100">
-          <span className="text-xs text-slate-500 font-mono-data">Rotaract SMS Lucknow Impact-a-thon 2026</span>
+          <span className="text-xs text-slate-500 font-mono-data">Kaushal Setu · Bharat Skills & Commerce Architecture</span>
           <button
             onClick={() => onNavigate('landing')}
             className="text-xs text-blue-700 hover:underline flex items-center gap-1 font-semibold"
