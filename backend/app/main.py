@@ -373,3 +373,8 @@ def capture_paypal_order(body: OrderCaptureIn):
 
 
 app.include_router(v1)
+app.include_router(v1, prefix="/api")
+
+@app.get("/api/health")
+def api_health():
+    return health()

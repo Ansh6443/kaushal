@@ -110,9 +110,17 @@ export const EscrowPayoutsPage: React.FC<EscrowPayoutsPageProps> = ({
     mode: 'sandbox'
   });
 
+  // Dynamic API URL resolver: points to local backend on dev port 3000, and serverless /api in cloud deployment
+  const resolveApiUrl = (endpoint: string) => {
+    if (typeof window !== 'undefined' && window.location.hostname === 'localhost' && window.location.port === '3000') {
+      return `http://localhost:8000${endpoint}`;
+    }
+    return `/api${endpoint}`;
+  };
+
   // Fetch live backend config & milestones if server is running
   useEffect(() => {
-    fetch('http://localhost:8000/v1/paypal/config')
+    fetch(resolveApiUrl('/v1/paypal/config'))
       .then(res => res.json())
       .then(data => {
         if (data && data.mode) {
@@ -124,7 +132,7 @@ export const EscrowPayoutsPage: React.FC<EscrowPayoutsPageProps> = ({
         setPaypalConfig({ configured: false, mode: 'sandbox' });
       });
 
-    fetch('http://localhost:8000/v1/escrow/milestones')
+    fetch(resolveApiUrl('/v1/escrow/milestones'))
       .then(res => res.json())
       .then(data => {
         if (Array.isArray(data) && data.length > 0) {
@@ -194,7 +202,7 @@ export const EscrowPayoutsPage: React.FC<EscrowPayoutsPageProps> = ({
       };
 
       try {
-        const resp = await fetch('http://localhost:8000/v1/escrow/verify-and-payout', {
+        const resp = await fetch(resolveApiUrl('/v1/escrow/verify-and-payout'), {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify(payload)

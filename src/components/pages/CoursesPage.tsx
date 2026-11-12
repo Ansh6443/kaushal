@@ -157,6 +157,13 @@ export const CoursesPage: React.FC<CoursesPageProps> = ({
     setTimeout(() => setAlertMsg(null), 3500);
   };
 
+  const resolveApiUrl = (endpoint: string) => {
+    if (typeof window !== 'undefined' && window.location.hostname === 'localhost' && window.location.port === '3000') {
+      return `http://localhost:8000${endpoint}`;
+    }
+    return `/api${endpoint}`;
+  };
+
   // Step 1: Initiate PayPal Order via Backend
   const handleInitiateAgenticCheckout = async (cert: RecommendedCertification) => {
     setActiveCheckoutCourse(cert);
@@ -171,7 +178,7 @@ export const CoursesPage: React.FC<CoursesPageProps> = ({
     };
 
     try {
-      const resp = await fetch('/api/v1/paypal/orders/create', {
+      const resp = await fetch(resolveApiUrl('/v1/paypal/orders/create'), {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(payload)
@@ -218,7 +225,7 @@ export const CoursesPage: React.FC<CoursesPageProps> = ({
     const orderId = currentOrder.id;
 
     try {
-      const resp = await fetch('/api/v1/paypal/orders/capture', {
+      const resp = await fetch(resolveApiUrl('/v1/paypal/orders/capture'), {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ order_id: orderId })
