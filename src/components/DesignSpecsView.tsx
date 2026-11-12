@@ -90,7 +90,7 @@ export const DesignSpecsView: React.FC<DesignSpecsViewProps> = ({ lang }) => {
         <div className="inline-flex items-center gap-2 text-xs font-mono-data text-blue-700 font-semibold">
           <span>CIVIC-TECH DESIGN CONSTITUTION & RESEARCH</span>
           <span>·</span>
-          <span>IMPACT-A-THON 2026</span>
+          <span>ENTERPRISE SPECIFICATION 2026</span>
         </div>
         <h1 className="text-2xl sm:text-3xl font-display font-bold text-slate-900 tracking-tight">
           {lang === 'en' 

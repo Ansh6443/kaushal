@@ -62,7 +62,7 @@ export const PrintableDossier: React.FC<PrintableDossierProps> = ({ lang }) => {
         doc.setFontSize(7);
         doc.setTextColor(100, 116, 139); // Slate-500
         doc.text(
-          'KAUSHAL SETU · ROTARACT SMS LUCKNOW · IMPACT-A-THON 2026 · PROBLEM STATEMENT 202608',
+          'KAUSHAL SETU · SKILLS-TO-EMPLOYMENT & AGENTIC COMMERCE PLATFORM',
           margin,
           pageHeight - 8
         );
@@ -88,7 +88,7 @@ export const PrintableDossier: React.FC<PrintableDossierProps> = ({ lang }) => {
       doc.setFont('helvetica', 'bold');
       doc.setFontSize(7.5);
       doc.setTextColor(29, 78, 216);
-      doc.text('ROTARACT CLUB OF SMS LUCKNOW · IMPACT-A-THON 2026 · PROBLEM CODE 202608', margin + 6, 20);
+      doc.text('ENTERPRISE AI ARCHITECTURE SPECIFICATION', margin + 6, 20);
 
       doc.setFontSize(18);
       doc.setTextColor(15, 23, 42);
@@ -418,7 +418,7 @@ export const PrintableDossier: React.FC<PrintableDossierProps> = ({ lang }) => {
         { screen: '7. Job & Internship Listings', purpose: 'Hyperlocal opportunities filtered by commute radius (<=20km) with fixed stipend.' },
         { screen: '7a. Job Detail Modal', purpose: 'Workplace terms, facilities, and direct WhatsApp / Phone HR dispatch.' },
         { screen: '8. Profile / Dashboard', purpose: 'Persistent skill progress, earned badges, and application status tracking.' },
-        { screen: '9. About / Impact', purpose: 'Judge-facing mission statement for Rotaract SMS Lucknow Problem 202608.' }
+        { screen: '9. About / Impact', purpose: 'Platform mission statement, industrial alignment, and socio-economic impact metrics.' }
       ];
 
       sitemapData.forEach(item => {
@@ -449,13 +449,13 @@ export const PrintableDossier: React.FC<PrintableDossierProps> = ({ lang }) => {
       doc.setFont('helvetica', 'bold');
       doc.setFontSize(8.5);
       doc.setTextColor(5, 150, 105);
-      doc.text('MPH HALL LIVE PRESENTATION READY (5-MIN PITCH + 2-MIN Q&A)', margin + 6, y + 8);
+      doc.text('ENTERPRISE INTEGRATION ARCHITECTURE (PRODUCTION READY)', margin + 6, y + 8);
 
       doc.setFont('helvetica', 'normal');
       doc.setFontSize(7.5);
       doc.setTextColor(6, 78, 59);
       doc.text(
-        'Per the hackathon "no coding in MPH Hall" rule, all 11 screens, transitions, and interactions are fully wired and functional in the build. Zero dead links, zero broken mock states.',
+        'All screens, payment transitions, and autonomous escrow interactions are fully wired and functional in the build.',
         margin + 6,
         y + 16
       );
@@ -485,8 +485,8 @@ export const PrintableDossier: React.FC<PrintableDossierProps> = ({ lang }) => {
           </h2>
           <p className="text-xs text-slate-500 mt-0.5">
             {lang === 'en'
-              ? 'Multi-page report ready for judges, team reviews, or print export in high resolution.'
-              : 'न्यायाधीशों, टीम समीक्षा एवं प्रिंट निर्यात के लिए तैयार पूर्ण दस्तावेज।'}
+              ? 'Multi-page report ready for stakeholders, reviews, or print export in high resolution.'
+              : 'समीक्षा एवं हितधारकों एवं प्रिंट निर्यात के लिए तैयार पूर्ण दस्तावेज।'}
           </p>
         </div>
 
@@ -525,8 +525,8 @@ export const PrintableDossier: React.FC<PrintableDossierProps> = ({ lang }) => {
         {/* Cover / Header Section */}
         <div className="border-b border-slate-200 pb-8 space-y-4">
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-xs font-mono-data text-blue-700 font-semibold">
-            <span>ROTARACT SMS LUCKNOW · IMPACT-A-THON 2026</span>
-            <span>SPECIFICATION CODE: KS-UXUI-202608</span>
+            <span>KAUSHAL SETU · BHARAT SKILL PIPELINE</span>
+            <span>SPECIFICATION CODE: KS-ENTERPRISE-2026</span>
           </div>
 
           <div className="space-y-1">
@@ -615,7 +615,7 @@ export const PrintableDossier: React.FC<PrintableDossierProps> = ({ lang }) => {
         {/* Footer of Dossier */}
         <div className="pt-8 border-t border-slate-200 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-mono-data text-slate-500">
           <div>
-            <span>KAUSHAL SETU · ROTARACT SMS LUCKNOW · MPH HALL DEMO READY</span>
+            <span>KAUSHAL SETU · BHARAT SKILLS & COMMERCE INFRASTRUCTURE</span>
           </div>
           <div className="flex items-center gap-2 text-emerald-700 font-semibold">
             <ShieldCheck className="w-4 h-4 text-emerald-600" />

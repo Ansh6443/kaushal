@@ -128,7 +128,7 @@ export interface HrDispatchRecord {
   channel: 'Direct Portal Push' | 'Verified WhatsApp Link' | 'NATS Apprenticeship API';
 }
 
-export interface JuryQaItem {
+export interface PlatformQaItem {
   id: string;
   pillar: '1-Social Impact' | '2-Presentation' | '3-Unique Idea' | '4-Feasibility' | '5-Prototype' | '6-Q&A Defense';
   pillarHi: '१-सामाजिक प्रभाव' | '२-प्रस्तुति' | '३-विशिष्ट विचार' | '४-व्यावहारिकता' | '५-प्रोटोटाइप' | '६-प्रश्न-उत्तर';
